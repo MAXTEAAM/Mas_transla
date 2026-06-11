@@ -846,7 +846,7 @@ function renderCol2(){
     <button class="btn" onclick="deselectAll()">☐ Aucun</button>
     <button class="btn violet" onclick="autoTranslateMissing()">\u{1F916} Auto-traduire les manquants</button>
     <button class="btn" onclick="keepAllIbm()">✅ Conserver tout l'IBM</button>
-    <button class="btn" onclick="openSql(tb.id)" title="Requête d'extraction de cette table">\u{1F5C4} SQL</button>
+    <button class="btn" onclick="openSql('${tb.id}')" title="Requête d'extraction de cette table">\u{1F5C4} SQL</button>
   </div>`;
 
   html+=`<div class="filters-bar">
@@ -1298,7 +1298,7 @@ function setDV(ws,colLetter,from,to,list){
 }
 function colLetter(n){let s='';while(n>0){const m=(n-1)%26;s=String.fromCharCode(65+m)+s;n=(n-1)/26|0;}return s;}
 
-function buildTableSheet(wb,tb,items,lang,S){
+async function buildTableSheet(wb,tb,items,lang,S){
   const ws=wb.addWorksheet(tb.icon+' '+tb.id,{views:[{state:'frozen',ySplit:5}]});
   /* Définition des colonnes : module + clés + (src,ibm,choix,finale)×texts + extras + statut/prio/comm */
   const cols=[{h:'MODULE / APPLICATION',hint:'Module / Application Maximo',fill:CX.hdrModule,row:CX.rowBase,w:24}];
@@ -1385,6 +1385,10 @@ function buildTableSheet(wb,tb,items,lang,S){
       else if(c.prio)cell.value='🟡 Moyenne';
       else if(c.comm)cell.value=Object.values(rowItems).map(it=>commentOf(it,lang)).filter(Boolean).join(' | ');
       else cell.value=row.module;
+      /* verrouillage : clés/source/IBM toujours · FINALE si choix = Conserver IBM */
+      let locked=!!(c.key||c.src||c.ibm||c.extra);
+      if(c.fin){const it=rowItems[c.fin];locked=!!(it&&effChoice(it,lang)==='ibm');}
+      cell.protection={locked:locked};
       if(S){
         cell.fill={type:'pattern',pattern:'solid',fgColor:{argb:fill}};
         cell.font={size:9,name:'Calibri'};
@@ -1399,6 +1403,7 @@ function buildTableSheet(wb,tb,items,lang,S){
     cols.forEach((c,i)=>{
       const cell=ws.getCell(r,i+1);
       if(c.extra==='LOCALENAME')cell.value=lang;
+      cell.protection={locked:false};
       if(S){cell.fill={type:'pattern',pattern:'solid',fgColor:{argb:c.row}};cell.border=BORD;cell.font={size:9,name:'Calibri'};}
     });
     r++;
@@ -1412,6 +1417,9 @@ function buildTableSheet(wb,tb,items,lang,S){
     if(c.prio)setDV(ws,L,6,last,DV_PRIO);
   });
   ws.autoFilter={from:{row:4,column:1},to:{row:4,column:n}};
+  /* protection de feuille : source EN, IBM et finales « Conserver IBM » inviolables */
+  await ws.protect('maximots',{selectLockedCells:true,selectUnlockedCells:true,
+    autoFilter:true,sort:true,formatCells:true,formatColumns:true,formatRows:true,insertRows:true});
   return rowIdxs.length;
 }
 
@@ -1527,7 +1535,7 @@ function buildGuideSheet(wb,S){
   sec('ÉTAPE 3 — Choix client',"Le client renseigne la colonne 'CHOIX CLIENT' via la liste déroulante :\n  ✅ Conserver traduction IBM   → accepte la valeur IBM telle quelle\n  ✏️ Modifier                  → veut une traduction différente\n  ⬜ Non obligatoire           → élément non traduit (code, acronyme…)\n  🔄 En cours                  → traduction en réflexion");
   sec('ÉTAPE 4 — Traduction finale',"Renseigner 'TRADUCTION FINALE xx' :\n  • Si choix = 'Conserver IBM'  → recopier la valeur IBM\n  • Si choix = 'Modifier'       → saisir la nouvelle traduction\n  • Si choix = 'Non obligatoire'→ laisser vide\nC'est cette colonne qui sera importée via MxLoader.\n⚠ Contraintes contrôlées par MaxiMots : longueur max du champ DB, variables {0} {1} des messages, balises HTML des descriptions longues.");
   sec('ÉTAPE 5 — Import MxLoader',"Utiliser l'onglet '📤 Format MxLoader' : lignes prêtes (action=AddChange, object=NOM_TABLE, LANGCODE).\nColler dans votre classeur MxLoader puis charger.\nAvant import : exécuter la requête 'CONTRÔLE — FR existants' pour éviter les doublons.");
-  sec('LÉGENDE COULEURS',"🔵 Fond bleu pâle       → VALEUR SOURCE EN   (lecture seule)\n🟣 Fond lavande         → TRADUCTION IBM     (lecture seule)\n🟡 Fond jaune           → CHOIX CLIENT       (décision client)\n🟢 Fond vert pâle       → TRADUCTION FINALE  (valeur importée MxLoader)\n🟠 Fond orange pâle     → STATUT\n🔴 Fond rouge pâle      → contrainte DB non respectée (longueur, variable, HTML)");
+  sec('LÉGENDE COULEURS',"🔵 Fond bleu pâle       → VALEUR SOURCE EN   (lecture seule)\n🟣 Fond lavande         → TRADUCTION IBM     (lecture seule)\n🟡 Fond jaune           → CHOIX CLIENT       (décision client)\n🟢 Fond vert pâle       → TRADUCTION FINALE  (valeur importée MxLoader)\n🟠 Fond orange pâle     → STATUT\n🔴 Fond rouge pâle      → contrainte DB non respectée (longueur, variable, HTML)\n🔒 Cellules verrouillées → clés techniques, source EN, traduction IBM, et TRADUCTION FINALE des choix « Conserver IBM » (mot de passe de feuille : maximots)");
   sec('TABLES COUVERTES',"SYNONYMDOMAIN   → valeurs de domaines (listes déroulantes)\nMAXLABELS       → labels des champs, onglets, boutons et applications\nMAXMESSAGES     → messages d'erreur, d'avertissement et d'information\nMAXATTRIBUTE    → titres et descriptions des attributs d'objets\nAPPLICATION     → noms des applications dans les menus\nLONGDESCRIPTION → descriptions longues (aide, notices)");
 }
 
@@ -1579,19 +1587,17 @@ async function generateExcel(){
   if(!state.selectedLangs.length){toast('Sélectionnez au moins une langue cible','warning');return;}
   try{
     const S=state.styled;
-    /* Classeur complet : les 6 tables, avec les éléments cochés (par défaut : tous) */
-    const tabsData=TABLES.map(tb=>{
-      const all=itemsOf(tb);
-      const items=initTables.has(tb.id)?all.filter(it=>state.checked.has(it.id)):all;
-      return {tb,items};
-    });
+    /* Uniquement les tables ayant des éléments cochés, et uniquement ces éléments */
+    const tabsData=TABLES.map(tb=>({tb,items:itemsOf(tb).filter(it=>state.checked.has(it.id))}))
+      .filter(td=>td.items.length>0);
+    if(!tabsData.length){toast('Aucun élément sélectionné — cochez des éléments dans une table','warning');return;}
     for(const lang of state.selectedLangs){
       toast('Génération du classeur de suivi '+lang+'...','info');
       const wb=new ExcelJS.Workbook();
       wb.creator='MaxiMots by maxTeam';
       wb.created=new Date();
-      if(state.includeSql)buildSqlSheet(wb,TABLES,S);
-      tabsData.forEach(({tb,items})=>buildTableSheet(wb,tb,items,lang,S));
+      if(state.includeSql)buildSqlSheet(wb,tabsData.map(td=>td.tb),S);
+      for(const td of tabsData)await buildTableSheet(wb,td.tb,td.items,lang,S);
       if(state.includeMxloader)buildMxloaderSheet(wb,tabsData,lang,S);
       buildGuideSheet(wb,S);
       buildSuiviSheet(wb,tabsData,lang,S);
