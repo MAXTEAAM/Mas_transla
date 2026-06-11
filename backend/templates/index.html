@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<title>MaxiMots — Translation Studio by maxTeam</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
+<style>
+:root {
+  --navy:#1C477A; --navy-d:#122E4F; --navy-d2:#0D2037;
+  --tint:#E4E9EF; --tint2:#F1F4F7; --mid:#829AB6;
+  --paper:#FFFFFF;
+  --bg:#F1F4F7; --bg2:#FFFFFF;
+  --panel:#FFFFFF; --panel2:#F7F9FC;
+  --line:#CDD7E2; --line2:#B7C5D6;
+  --ink:#0D2037; --mut:#5B7392; --mut2:#829AB6;
+  --brand:#1C477A; --brand-l:#2E6BB0; --brand-d:#122E4F;
+  --brand-glow:rgba(28,71,122,.18);
+  --amber:#E0A030; --amber-d:#C4861B;
+  --teal:#2E6BB0; --blue:#1C477A; --violet:#7C4DBC;
+  --green:#1F9D5F; --red:#D14343;
+  --shadow:0 10px 30px rgba(13,32,55,.10);
+  --shadow-sm:0 4px 14px rgba(13,32,55,.08);
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+  --sans:'Inter','IBM Plex Sans',system-ui,-apple-system,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{height:100%;}
+body{
+  min-height:100%;
+  font-family:var(--sans);
+  background-color:var(--bg);
+  background-image:radial-gradient(var(--line) 1px,transparent 1px);
+  background-size:26px 26px;
+  color:var(--ink);
+  font-size:14px;line-height:1.5;
+}
+::-webkit-scrollbar{width:6px;height:6px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--line2);border-radius:3px;}
+::-webkit-scrollbar-thumb:hover{background:var(--mid);}
+
+/* ===== TOP BAR ===== */
+.topbar{
+  height:68px;position:sticky;top:0;z-index:100;
+  display:flex;align-items:center;gap:14px;
+  padding:0 22px;
+  background:linear-gradient(135deg,var(--navy),var(--navy-d));
+  box-shadow:0 4px 20px rgba(13,32,55,.25);
+  overflow:hidden;
+}
+.topbar::after{
+  content:'';position:absolute;top:-60px;right:-40px;width:300px;height:200px;
+  background:radial-gradient(ellipse,rgba(224,160,48,.22) 0%,transparent 70%);
+  pointer-events:none;
+}
+.logo{
+  width:46px;height:46px;background:var(--paper);border-radius:10px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  box-shadow:0 2px 8px rgba(0,0,0,.18);overflow:hidden;
+}
+.logo img{width:38px;height:38px;object-fit:contain;}
+.tb-title{display:flex;flex-direction:column;line-height:1.15;position:relative;z-index:1;}
+.tb-title .app-name{font-size:22px;font-weight:800;letter-spacing:-.5px;}
+.tb-title .app-name .p1{color:#fff;}
+.tb-title .app-name .p2{color:var(--amber);}
+.tb-title .subtitle{
+  font-family:var(--mono);font-size:9.5px;font-weight:500;
+  text-transform:uppercase;letter-spacing:.22em;color:rgba(255,255,255,.7);
+}
+.tb-title .byline{
+  font-family:var(--mono);font-size:8.5px;font-weight:500;
+  text-transform:uppercase;letter-spacing:.14em;color:var(--amber);
+}
+.tb-right{margin-left:auto;display:flex;align-items:center;gap:10px;position:relative;z-index:1;}
+.tb-badge{
+  display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:8px;
+  background:rgba(255,255,255,.1);color:rgba(255,255,255,.85);
+  font-family:var(--mono);font-size:11px;font-weight:500;
+  border:1px solid rgba(255,255,255,.08);backdrop-filter:blur(4px);
+}
+.tb-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--green);}
+.tb-badge.click{cursor:pointer;transition:background .15s;}
+.tb-badge.click:hover{background:rgba(255,255,255,.2);}
+
+/* ===== LAYOUT ===== */
+.main-grid{
+  display:grid;
+  grid-template-columns:262px minmax(360px,1fr) 400px;
+  gap:18px;padding:18px;
+  height:calc(100vh - 68px);
+}
+@media (max-width:1100px){
+  .main-grid{grid-template-columns:1fr;height:auto;}
+  .col{max-height:none !important;}
+}
+
+/* ===== COLUMNS (cards) ===== */
+.col{
+  display:flex;flex-direction:column;overflow:hidden;
+  background:var(--panel);border:1px solid var(--line);
+  border-radius:14px;box-shadow:var(--shadow-sm);
+  max-height:100%;
+}
+.col-head{
+  padding:14px 18px 12px;flex-shrink:0;
+  background:linear-gradient(180deg,var(--panel2),var(--panel));
+  border-bottom:1px solid var(--line);
+}
+.col-head .step{
+  font-family:var(--mono);font-size:10px;font-weight:600;
+  text-transform:uppercase;letter-spacing:2px;color:var(--amber-d);margin-bottom:2px;
+}
+.col-head h2{font-size:15px;font-weight:700;color:var(--ink);}
+.col-head .desc{font-size:12px;color:var(--mut);margin-top:1px;}
+.col-body{flex:1;overflow-y:auto;padding:12px;background:var(--panel2);}
+
+/* ===== SEARCH ===== */
+.search-box{position:relative;margin:0 0 10px;}
+.search-box input{
+  width:100%;padding:8px 12px 8px 34px;border:1px solid var(--line);border-radius:8px;
+  background:var(--paper);font-family:var(--sans);font-size:13px;color:var(--ink);
+  outline:none;transition:border-color .2s,box-shadow .2s;
+}
+.search-box input:focus{border-color:var(--brand-l);box-shadow:0 0 0 3px var(--brand-glow);}
+.search-box input::placeholder{color:var(--mut2);}
+.search-box .sicon{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--mut2);font-size:14px;pointer-events:none;}
+
+/* ===== MODULE GROUPS ===== */
+.mgroup{margin-bottom:8px;}
+.mgroup-head{
+  display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;
+  cursor:pointer;user-select:none;font-size:11.5px;font-weight:700;
+  text-transform:uppercase;letter-spacing:.8px;color:var(--mut);transition:background .15s;
+}
+.mgroup-head:hover{background:var(--tint);}
+.mgroup-head .arrow{font-size:10px;transition:transform .2s;color:var(--mut2);}
+.mgroup.open .mgroup-head .arrow{transform:rotate(90deg);}
+.mgroup-head .count{
+  margin-left:auto;font-family:var(--mono);font-size:10px;font-weight:500;
+  color:var(--mut2);background:var(--tint);padding:1px 6px;border-radius:4px;
+}
+.mlist{display:none;padding:2px 0 2px 8px;}
+.mgroup.open .mlist{display:block;}
+.os{
+  display:block;padding:8px 11px;border-radius:9px;margin-bottom:4px;
+  cursor:pointer;transition:all .15s;border:1px solid transparent;
+}
+.os:hover{background:var(--tint);border-color:var(--line);}
+.os.active{
+  background:linear-gradient(135deg,var(--navy),var(--navy-d));
+  color:#fff;box-shadow:var(--shadow-sm);
+}
+.os .os-code{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--brand-l);}
+.os.active .os-code{color:var(--amber);}
+.os .os-label{font-size:12.5px;font-weight:600;color:var(--ink);}
+.os.active .os-label{color:#fff;}
+.os .os-meta{font-size:11px;color:var(--mut);}
+.os.active .os-meta{color:rgba(255,255,255,.65);}
+
+/* ===== LANGUAGE CHIPS ===== */
+.lang-row{display:flex;flex-wrap:wrap;gap:6px;padding:8px 0 10px;border-bottom:1px solid var(--line);margin-bottom:10px;}
+.lang-chip{
+  display:inline-flex;align-items:center;gap:4px;padding:4px 10px;border-radius:6px;
+  border:1px solid var(--line);background:var(--paper);cursor:pointer;user-select:none;
+  font-size:12px;font-weight:500;color:var(--mut);transition:all .15s;
+}
+.lang-chip:hover{border-color:var(--brand-l);color:var(--brand);}
+.lang-chip.active{background:var(--brand);border-color:var(--brand);color:#fff;}
+.lang-chip.src{background:var(--tint);border-color:var(--line2);color:var(--mut);cursor:default;font-weight:700;}
+.lang-chip .flag{font-size:14px;}
+
+/* ===== ACTIONS / FILTERS ===== */
+.actions-bar{display:flex;align-items:center;gap:8px;padding:0 0 8px;flex-wrap:wrap;}
+.filters-bar{display:flex;align-items:center;gap:6px;padding:0 0 10px;flex-wrap:wrap;}
+.fchip{
+  padding:3px 10px;border-radius:20px;border:1px solid var(--line);
+  background:var(--paper);font-size:11px;font-weight:600;color:var(--mut);
+  cursor:pointer;transition:all .15s;
+}
+.fchip:hover{border-color:var(--brand-l);}
+.fchip.active{background:var(--navy);border-color:var(--navy);color:#fff;}
+
+.btn{
+  display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:8px;
+  border:1px solid var(--line);background:var(--paper);color:var(--brand);
+  font-family:var(--sans);font-size:12px;font-weight:600;cursor:pointer;
+  box-shadow:var(--shadow-sm);transition:all .15s;
+}
+.btn:hover{border-color:var(--brand-l);transform:translateY(-1px);}
+.btn:active{transform:none;}
+.btn.violet{background:var(--violet);border-color:var(--violet);color:#fff;}
+.btn.violet:hover{opacity:.92;}
+.btn.ghost{background:transparent;box-shadow:none;color:var(--mut);}
+.btn.ghost:hover{color:var(--red);border-color:var(--red);}
+
+/* ===== FIELD CARDS ===== */
+.select-all-row{
+  display:flex;align-items:center;gap:8px;padding:6px 10px;background:var(--tint2);
+  border:1px solid var(--line);border-radius:8px;margin-bottom:8px;
+  font-size:12px;color:var(--mut);cursor:pointer;user-select:none;
+}
+.select-all-row:hover{background:var(--tint);}
+.fcheck{
+  width:18px;height:18px;border-radius:4px;border:2px solid var(--line2);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer;
+  font-size:11px;color:transparent;transition:all .15s;background:var(--paper);
+}
+.fcheck.checked{background:var(--brand);border-color:var(--brand);color:#fff;}
+.fcheck.disabled{background:var(--tint);border-color:var(--line);cursor:not-allowed;}
+
+.rel-head{
+  font-family:var(--mono);font-size:10px;font-weight:600;text-transform:uppercase;
+  letter-spacing:1.5px;color:var(--violet);margin:14px 0 6px;
+  display:flex;align-items:center;gap:6px;
+}
+.rel-head::after{content:'';flex:1;height:1px;background:var(--line);}
+
+.field-card{
+  background:var(--paper);border:1px solid var(--line);border-radius:10px;
+  padding:11px 13px;margin-bottom:8px;transition:all .2s;
+}
+.field-card:hover{border-color:var(--brand-l);box-shadow:var(--shadow-sm);}
+.field-card.selected{border-color:var(--brand);box-shadow:0 0 0 3px var(--brand-glow);}
+.field-card.dim{opacity:.6;}
+.fc-top{display:flex;align-items:center;gap:8px;}
+.fname{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--brand);}
+.ftitle{font-size:12px;color:var(--mut);}
+.tbadge{
+  font-family:var(--mono);font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;margin-left:auto;flex-shrink:0;
+}
+.tbadge.TEXT{background:#E3EDF8;color:var(--blue);}
+.tbadge.INT{background:#EDE6F8;color:var(--violet);}
+.tbadge.DEC{background:#DBF1E5;color:var(--green);}
+.tbadge.DATE{background:#FBEDD3;color:var(--amber-d);}
+.tbadge.BOOL{background:#DDE5EE;color:var(--navy);}
+.tbadge.DOM{background:#FDE8E8;color:var(--red);}
+.fsource{
+  margin:8px 0 0 26px;padding:6px 10px;background:var(--tint2);border-radius:6px;
+  font-size:12px;color:var(--ink);border-left:3px solid var(--brand-l);
+}
+.fsource label{
+  font-family:var(--mono);font-size:9.5px;font-weight:600;text-transform:uppercase;
+  letter-spacing:1px;color:var(--mut);display:block;margin-bottom:1px;
+}
+.badges{display:flex;flex-wrap:wrap;gap:4px;margin:7px 0 0 26px;}
+.sbadge{
+  display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:5px;
+  font-size:11px;font-weight:600;
+}
+.sbadge.native{background:#DBF1E5;color:#157A47;}
+.sbadge.needs{background:#FBEDD3;color:#A67512;}
+.sbadge.auto{background:#EDE6F8;color:#6B3FA0;}
+.sbadge.custom{background:#EDE6F8;color:#6B3FA0;outline:1px solid var(--violet);}
+.sbadge.none{background:var(--tint);color:var(--mut2);}
+.edit-btn-row{margin:7px 0 0 26px;}
+.inline-edit{
+  margin:8px 0 0 26px;padding:8px;background:var(--tint2);border-radius:8px;border:1px solid var(--line);
+}
+.inline-edit .edit-lang{
+  font-family:var(--mono);font-size:10px;font-weight:600;color:var(--amber-d);
+  margin-bottom:4px;text-transform:uppercase;letter-spacing:1px;
+}
+.inline-edit textarea{
+  width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:6px;
+  font-family:var(--sans);font-size:12px;color:var(--ink);resize:vertical;min-height:34px;
+  outline:none;transition:border-color .2s;background:var(--paper);
+}
+.inline-edit textarea:focus{border-color:var(--brand-l);box-shadow:0 0 0 3px var(--brand-glow);}
+
+/* ===== COL 3 ===== */
+.stats-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px;}
+.stat-card{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:9px 6px;text-align:center;}
+.stat-card .v{font-size:21px;font-weight:800;font-family:var(--mono);line-height:1.1;color:var(--brand);}
+.stat-card.green .v{color:var(--green);}
+.stat-card.amber .v{color:var(--amber-d);}
+.stat-card .l{font-size:9.5px;color:var(--mut);font-weight:600;text-transform:uppercase;letter-spacing:.5px;}
+.section-label{
+  font-family:var(--mono);font-size:10px;font-weight:600;text-transform:uppercase;
+  letter-spacing:1.5px;color:var(--mut);margin:12px 0 6px;
+}
+.prog-item{margin-bottom:8px;}
+.prog-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:3px;}
+.prog-lang{font-size:12px;font-weight:600;color:var(--ink);}
+.prog-pct{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--brand);}
+.prog-track{width:100%;height:6px;border-radius:3px;background:var(--tint);overflow:hidden;}
+.prog-fill{height:100%;border-radius:3px;transition:width .4s ease;}
+.prog-fill.green{background:var(--green);}
+.prog-fill.amber{background:var(--amber);}
+.prog-fill.brand{background:var(--brand-l);}
+
+.toggle-row{
+  display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--paper);
+  border:1px solid var(--line);border-radius:8px;margin-bottom:6px;cursor:pointer;transition:border-color .15s;
+}
+.toggle-row:hover{border-color:var(--brand-l);}
+.sw{width:36px;height:20px;border-radius:10px;background:var(--line2);position:relative;flex-shrink:0;transition:background .2s;}
+.sw.on{background:var(--green);}
+.sw .knob{width:16px;height:16px;border-radius:50%;background:#fff;position:absolute;top:2px;left:2px;transition:transform .2s;box-shadow:0 1px 3px rgba(0,0,0,.2);}
+.sw.on .knob{transform:translateX(16px);}
+.tg-label{font-size:12px;font-weight:500;color:var(--ink);}
+.tg-hint{font-size:10.5px;color:var(--mut);margin-left:auto;text-align:right;}
+
+.preview-wrap{background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:auto;margin-top:8px;max-height:240px;}
+.preview-table{width:100%;border-collapse:collapse;font-size:11.5px;}
+.preview-table th{
+  background:var(--navy);color:#fff;padding:7px 9px;text-align:left;
+  font-family:var(--mono);font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;
+  position:sticky;top:0;z-index:2;white-space:nowrap;
+}
+.preview-table td{padding:6px 9px;border-bottom:1px solid var(--line);vertical-align:top;}
+.preview-table tr:nth-child(even) td{background:var(--tint2);}
+.preview-table .c-nat{background:#DBF1E5 !important;}
+.preview-table .c-need{background:#FBEDD3 !important;}
+.preview-table .c-auto{background:#EDE6F8 !important;}
+.preview-table .c-src{background:#E3EDF8 !important;}
+
+.btn-generate{
+  display:flex;align-items:center;justify-content:center;gap:8px;width:100%;
+  padding:14px 20px;border:none;border-radius:10px;
+  background:linear-gradient(135deg,var(--amber),var(--amber-d));
+  color:#fff;font-family:var(--sans);font-size:14px;font-weight:700;cursor:pointer;
+  margin-top:14px;box-shadow:0 4px 16px rgba(224,160,48,.35);transition:all .2s;
+}
+.btn-generate:hover{transform:translateY(-1px);box-shadow:0 6px 22px rgba(224,160,48,.45);}
+.btn-generate:disabled{opacity:.5;cursor:not-allowed;transform:none;}
+.btn-reset{
+  display:flex;align-items:center;justify-content:center;gap:6px;width:100%;
+  padding:9px;border:1px solid var(--line);border-radius:10px;background:transparent;
+  color:var(--mut);font-size:12px;font-weight:600;cursor:pointer;margin-top:8px;transition:all .15s;
+}
+.btn-reset:hover{border-color:var(--red);color:var(--red);}
+
+/* ===== TOASTS (bottom center, navy, slide-up) ===== */
+.toasts{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:9999;display:flex;flex-direction:column;gap:8px;align-items:center;}
+.toast{
+  padding:11px 20px;border-radius:10px;color:#fff;
+  background:linear-gradient(135deg,var(--navy),var(--navy-d));
+  box-shadow:var(--shadow);font-size:13px;font-weight:500;
+  display:flex;align-items:center;gap:10px;max-width:480px;
+  animation:toastUp .3s ease;
+}
+.toast .tdot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.toast.success .tdot{background:var(--green);}
+.toast.info .tdot{background:var(--brand-l);}
+.toast.warning .tdot{background:var(--amber);}
+.toast.error .tdot{background:var(--red);}
+@keyframes toastUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:none;}}
+
+/* ===== MODAL ===== */
+.modal-bk{
+  position:fixed;inset:0;z-index:500;background:rgba(13,32,55,.45);
+  backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;
+}
+.modal-bk.open{display:flex;}
+.modal{
+  width:min(480px,92vw);background:var(--paper);border-radius:16px;
+  box-shadow:var(--shadow);overflow:hidden;animation:toastUp .25s ease;
+}
+.modal-head{
+  padding:16px 20px;background:linear-gradient(135deg,var(--navy),var(--navy-d));color:#fff;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.modal-head h3{font-size:15px;font-weight:700;}
+.modal-head .x{cursor:pointer;font-size:18px;opacity:.7;background:none;border:none;color:#fff;}
+.modal-head .x:hover{opacity:1;}
+.modal-body{padding:18px 20px;}
+.src-opt{
+  display:flex;align-items:flex-start;gap:10px;padding:11px 13px;border:1px solid var(--line);
+  border-radius:10px;margin-bottom:8px;cursor:pointer;transition:all .15s;
+}
+.src-opt:hover{border-color:var(--brand-l);}
+.src-opt.active{border-color:var(--brand);box-shadow:0 0 0 3px var(--brand-glow);}
+.src-opt .radio{
+  width:16px;height:16px;border-radius:50%;border:2px solid var(--line2);margin-top:2px;flex-shrink:0;position:relative;
+}
+.src-opt.active .radio{border-color:var(--brand);}
+.src-opt.active .radio::after{content:'';position:absolute;inset:2px;border-radius:50%;background:var(--brand);}
+.src-opt .t{font-size:13px;font-weight:700;color:var(--ink);}
+.src-opt .d{font-size:11.5px;color:var(--mut);}
+.modal-body input[type=text]{
+  width:100%;padding:8px 11px;border:1px solid var(--line);border-radius:8px;
+  font-family:var(--mono);font-size:12px;color:var(--ink);outline:none;margin-top:6px;
+}
+.modal-body input[type=text]:focus{border-color:var(--brand-l);box-shadow:0 0 0 3px var(--brand-glow);}
+.modal-foot{padding:0 20px 18px;display:flex;justify-content:flex-end;gap:8px;}
+
+/* ===== EMPTY STATE ===== */
+.empty{text-align:center;padding:46px 20px;color:var(--mut);}
+.empty .ic{font-size:44px;margin-bottom:12px;opacity:.4;}
+.empty .ti{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:4px;}
+.empty .de{font-size:12px;color:var(--mut);}
+
+/* ===== REVIEW MODAL ===== */
+.modal.wide{width:min(860px,94vw);max-height:86vh;display:flex;flex-direction:column;}
+.modal.wide .modal-body{overflow-y:auto;flex:1;}
+.rv-hint{font-size:12px;color:var(--mut);padding:8px 10px;background:var(--tint2);border:1px solid var(--line);border-radius:8px;margin-bottom:12px;line-height:1.7;}
+.rv-field{display:flex;align-items:baseline;gap:10px;margin:14px 0 6px;padding-bottom:4px;border-bottom:1px solid var(--line);}
+.rv-field .fname{font-size:13px;}
+.rv-srctxt{font-size:12px;color:var(--mut);font-style:italic;}
+.rv-row{display:flex;align-items:flex-start;gap:10px;margin-bottom:6px;}
+.rv-lang{font-size:12px;font-weight:700;color:var(--ink);width:54px;flex-shrink:0;padding-top:7px;}
+.rv-opts{display:flex;flex-wrap:wrap;gap:6px;flex:1;}
+.rv-opt{
+  display:flex;align-items:center;gap:7px;padding:5px 10px;border-radius:8px;
+  border:1.5px solid var(--line);background:var(--paper);cursor:pointer;
+  transition:all .15s;max-width:100%;
+}
+.rv-opt:hover{border-color:var(--brand-l);}
+.rv-opt.off{opacity:.5;}
+.rv-opt .rv-k{font-family:var(--mono);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;flex-shrink:0;}
+.rv-opt .rv-t{font-size:12px;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:320px;}
+.rv-opt.nat .rv-k{color:var(--green);}
+.rv-opt.aut .rv-k{color:var(--violet);}
+.rv-opt.man .rv-k{color:var(--amber-d);}
+.rv-opt.sel{box-shadow:0 0 0 3px var(--brand-glow);border-color:var(--brand);}
+.rv-opt.sel.nat{background:#DBF1E5;}
+.rv-opt.sel.aut{background:#EDE6F8;}
+.rv-opt.sel.man{background:#FBEDD3;}
+.rv-in{
+  border:1px solid var(--line);border-radius:6px;padding:3px 8px;
+  font-family:var(--sans);font-size:12px;color:var(--ink);outline:none;width:220px;background:var(--paper);
+}
+.rv-in:focus{border-color:var(--brand-l);box-shadow:0 0 0 3px var(--brand-glow);}
+
+/* ===== CLIENT-FORMAT ADDITIONS ===== */
+.sbadge.ibmb{background:#EDE7F6;color:#4A148C;}
+.sbadge.warn{background:#FDE8E8;color:var(--red);}
+.warn-ink{color:var(--red);font-weight:600;}
+.fsource.ibm{border-left-color:var(--violet);background:#F5F0FB;}
+.rv-opt.skp .rv-k{color:var(--mut2);}
+.rv-opt.sel.skp{background:var(--tint);}
+.preview-table .c-ibm{background:#EDE7F6 !important;}
+.sql-block{margin-bottom:14px;}
+.sql-bhead{display:flex;align-items:center;gap:8px;margin-bottom:5px;}
+.sql-bname{font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--brand);}
+.sql-blabel{font-size:11.5px;color:var(--mut);}
+.sql-ta{
+  width:100%;border:1px solid var(--line);border-radius:8px;padding:9px 11px;
+  font-family:var(--mono);font-size:11.5px;line-height:1.55;color:#1B5E20;
+  background:#F6FBF3;resize:vertical;outline:none;transition:border-color .2s;white-space:pre;
+}
+.sql-ta:focus{border-color:var(--brand-l);box-shadow:0 0 0 3px var(--brand-glow);}
+.stat-row2{display:flex;justify-content:space-between;font-size:11.5px;color:var(--mut);padding:2px 4px 0;margin-bottom:4px;}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="logo"><img src="data:image/png;base64,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" alt="maxTeam"></div>
+  <div class="tb-title">
+    <div class="app-name"><span class="p1">Maxi</span><span class="p2">Mots</span></div>
+    <div class="subtitle">Translation Studio</div>
+    <div class="byline">by maxTeam</div>
+  </div>
+  <div class="tb-right">
+    <div class="tb-badge"><span class="dot"></span> MAS 9.x</div>
+    <div class="tb-badge click" onclick="openSql()" title="Requêtes SQL">&#128452; SQL</div>
+    <div class="tb-badge click" onclick="openSettings()" title="Source de données">&#9881; <span id="src-label">Démo</span></div>
+    <div class="tb-badge">v2.0.0</div>
+  </div>
+</div>
+
+<!-- MAIN GRID -->
+<div class="main-grid">
+
+  <div class="col" id="col1">
+    <div class="col-head">
+      <div class="step">01 — Sélection</div>
+      <h2>Tables Maximo</h2>
+      <div class="desc">Tables de traduction MAS 9 (extraction SQL)</div>
+    </div>
+    <div class="col-body" id="col1-body"></div>
+  </div>
+
+  <div class="col" id="col2">
+    <div class="col-head">
+      <div class="step">02 — Traduction</div>
+      <h2 id="col2-title">Éléments traduisibles</h2>
+      <div class="desc" id="col2-desc">Source EN · proposition IBM · arbitrage</div>
+    </div>
+    <div class="col-body" id="col2-body">
+      <div class="empty"><div class="ic">&#128269;</div><div class="ti">Aucun objet sélectionné</div>
+      <div class="de">Choisissez un objet dans la colonne de gauche pour voir ses champs traduisibles.</div></div>
+    </div>
+  </div>
+
+  <div class="col" id="col3">
+    <div class="col-head">
+      <div class="step">03 — Export</div>
+      <h2>Suivi &amp; Export</h2>
+      <div class="desc">Suivi client + Excel format MxLoader</div>
+    </div>
+    <div class="col-body" id="col3-body">
+      <div class="empty"><div class="ic">&#128203;</div><div class="ti">Aucune traduction configurée</div>
+      <div class="de">Sélectionnez des champs et des langues cibles pour afficher l'aperçu.</div></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- SETTINGS MODAL -->
+<div class="modal-bk" id="settings-modal">
+  <div class="modal">
+    <div class="modal-head"><h3>&#9881; Source de données</h3><button class="x" onclick="closeSettings()">&#10005;</button></div>
+    <div class="modal-body" id="settings-body"></div>
+    <div class="modal-foot">
+      <button class="btn" onclick="closeSettings()">Annuler</button>
+      <button class="btn violet" onclick="saveSettings()">Enregistrer</button>
+    </div>
+  </div>
+</div>
+
+<!-- SQL MODAL -->
+<div class="modal-bk" id="sql-modal">
+  <div class="modal wide">
+    <div class="modal-head"><h3>&#128452;&#65039; Requêtes SQL d'extraction</h3><button class="x" onclick="closeSql()">&#10005;</button></div>
+    <div class="modal-body" id="sql-body"></div>
+    <div class="modal-foot">
+      <button class="btn ghost" onclick="resetAllSql()">&#8634; Tout réinitialiser</button>
+      <button class="btn" onclick="closeSql()">Annuler</button>
+      <button class="btn violet" onclick="saveSql()">&#128190; Enregistrer</button>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEW MODAL -->
+<div class="modal-bk" id="review-modal">
+  <div class="modal wide">
+    <div class="modal-head"><h3>🔎 Arbitrage des traductions</h3><button class="x" onclick="closeReview()">✕</button></div>
+    <div class="modal-body" id="review-body"></div>
+    <div class="modal-foot">
+      <button class="btn" onclick="rvKeepIbm()">✅ Conserver tout l'IBM</button>
+      <button class="btn violet" onclick="rvAutoAll()">🤖 Auto-traduire les manquants</button>
+      <button class="btn" onclick="closeReview()">Annuler</button>
+      <button class="btn" style="background:linear-gradient(135deg,var(--amber),var(--amber-d));border-color:var(--amber-d);color:#fff;" onclick="confirmGenerate()">✓ Confirmer et générer</button>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts"></div>
+
+<script>
+/* ================== LANGUAGES ================== */
+const LANGUAGES = {
+  EN:{name:'English',   flag:'\u{1F1EC}\u{1F1E7}', code:'en'},
+  FR:{name:'Français',  flag:'\u{1F1EB}\u{1F1F7}', code:'fr'},
+  DE:{name:'Deutsch',   flag:'\u{1F1E9}\u{1F1EA}', code:'de'},
+  ES:{name:'Español',   flag:'\u{1F1EA}\u{1F1F8}', code:'es'},
+  AR:{name:'العربية',   flag:'\u{1F1F8}\u{1F1E6}', code:'ar'},
+  ZH:{name:'中文',       flag:'\u{1F1E8}\u{1F1F3}', code:'zh-CN'},
+  JA:{name:'日本語',     flag:'\u{1F1EF}\u{1F1F5}', code:'ja'},
+  PT:{name:'Português', flag:'\u{1F1F5}\u{1F1F9}', code:'pt'},
+  IT:{name:'Italiano',  flag:'\u{1F1EE}\u{1F1F9}', code:'it'},
+  NL:{name:'Nederlands',flag:'\u{1F1F3}\u{1F1F1}', code:'nl'},
+  KO:{name:'한국어',     flag:'\u{1F1F0}\u{1F1F7}', code:'ko'},
+  TR:{name:'Türkçe',    flag:'\u{1F1F9}\u{1F1F7}', code:'tr'},
+};
+
+/* ================== TABLES DE TRADUCTION MAXIMO ==================
+   Modèle aligné sur le fichier de suivi client :
+   extraction SQL des tables système → proposition IBM → choix client → traduction finale.
+   Chaque table : keyCols (clés techniques), texts (champs traduisibles avec contrainte
+   de longueur), extraCols, requête SQL d'extraction, lignes de démo (en = source EN,
+   ibm = traduction IBM/Maximo par défaut si elle existe). */
+const TABLES = [
+ {id:'SYNONYMDOMAIN', icon:'\u{1F534}', titleColor:'FFBF360C',
+  label:'Valeurs de domaines', desc:'Listes déroulantes (statuts, types...)',
+  keyCols:['DOMAINID','VALUE','MAXVALUE'], extraCols:['LOCALENAME','SITEID','ORGID'],
+  texts:[{f:'DESCRIPTION', srcLabel:'VALEUR SOURCE (EN)', maxlen:100}],
+  vol:'2 000 – 8 000 lignes',
+  sqlNote:"Toutes les valeurs EN des listes déroulantes Maximo.",
+  sql:"SELECT\n    sd.DOMAINID,\n    sd.VALUE,\n    sd.MAXVALUE,\n    sd.DESCRIPTION        AS DESCRIPTION_EN,\n    '' AS DESCRIPTION_IBM_FR,\n    '' AS TRADUCTION_FINALE_FR,\n    sd.LOCALENAME,\n    sd.SITEID,\n    sd.ORGID\nFROM SYNONYMDOMAIN sd\nWHERE sd.LOCALENAME = 'EN'\nORDER BY sd.DOMAINID, sd.VALUE;",
+  rows:[
+   {module:'Gestion du travail', keys:{DOMAINID:'WOSTATUS',VALUE:'WAPPR',MAXVALUE:'WAPPR'}, t:{DESCRIPTION:{en:'Waiting for Approval', ibm:{FR:"En attente d'approbation"}}}},
+   {module:'Gestion du travail', keys:{DOMAINID:'WOSTATUS',VALUE:'APPR',MAXVALUE:'APPR'}, t:{DESCRIPTION:{en:'Approved', ibm:{FR:'Approuvé(e)'}}}},
+   {module:'Gestion du travail', keys:{DOMAINID:'WOSTATUS',VALUE:'INPRG',MAXVALUE:'INPRG'}, t:{DESCRIPTION:{en:'In Progress', ibm:{FR:'En cours'}}}},
+   {module:'Gestion du travail', keys:{DOMAINID:'WOSTATUS',VALUE:'COMP',MAXVALUE:'COMP'}, t:{DESCRIPTION:{en:'Completed', ibm:{FR:'Terminé(e)'}}}},
+   {module:'Gestion du travail', keys:{DOMAINID:'WOSTATUS',VALUE:'CLOSE',MAXVALUE:'CLOSE'}, t:{DESCRIPTION:{en:'Closed', ibm:{FR:'Fermé(e)'}}}},
+   {module:'Gestion du travail', keys:{DOMAINID:'WOSTATUS',VALUE:'CAN',MAXVALUE:'CAN'}, t:{DESCRIPTION:{en:'Canceled', ibm:{FR:'Annulé(e)'}}}},
+   {module:'Gestion des actifs', keys:{DOMAINID:'ASSETSTATUS',VALUE:'OPERATING',MAXVALUE:'OPERATING'}, t:{DESCRIPTION:{en:'Operating', ibm:{FR:'En service'}}}},
+   {module:'Gestion des actifs', keys:{DOMAINID:'ASSETSTATUS',VALUE:'NOT READY',MAXVALUE:'NOT READY'}, t:{DESCRIPTION:{en:'Not Ready', ibm:{FR:'Non prêt'}}}},
+   {module:'Gestion des actifs', keys:{DOMAINID:'ASSETSTATUS',VALUE:'DECOMMISSIONED',MAXVALUE:'DECOMMISSIONED'}, t:{DESCRIPTION:{en:'Decommissioned', ibm:{FR:'Désaffecté(e)'}}}},
+   {module:'Centre de services', keys:{DOMAINID:'SRSTATUS',VALUE:'NEW',MAXVALUE:'NEW'}, t:{DESCRIPTION:{en:'New', ibm:{FR:'Nouveau'}}}},
+   {module:'Centre de services', keys:{DOMAINID:'SRSTATUS',VALUE:'QUEUED',MAXVALUE:'QUEUED'}, t:{DESCRIPTION:{en:'Queued', ibm:{FR:"En file d'attente"}}}},
+   {module:'Centre de services', keys:{DOMAINID:'SRSTATUS',VALUE:'RESOLVED',MAXVALUE:'RESOLVED'}, t:{DESCRIPTION:{en:'Resolved', ibm:{FR:'Résolu(e)'}}}},
+   {module:'Personnalisé (ZMAX)', keys:{DOMAINID:'ZCRITICITE',VALUE:'CRITICAL',MAXVALUE:'CRITICAL'}, t:{DESCRIPTION:{en:'Critical equipment - immediate response required', ibm:{}}}},
+   {module:'Personnalisé (ZMAX)', keys:{DOMAINID:'ZCRITICITE',VALUE:'STANDARD',MAXVALUE:'STANDARD'}, t:{DESCRIPTION:{en:'Standard equipment - planned response', ibm:{}}}},
+  ]},
+ {id:'MAXLABELS', icon:'\u{1F7E3}', titleColor:'FF4A148C',
+  label:'Labels d\'interface', desc:'Champs, onglets, boutons',
+  keyCols:['LKEY','SUBKEY'], extraCols:['LOCALENAME','NODEID','OWNERTABLE','OWNERID'],
+  texts:[{f:'VALUE', srcLabel:'VALEUR SOURCE (EN)', maxlen:1000}],
+  vol:'10 000 – 50 000 lignes',
+  sqlNote:"Tous les libellés de l'interface Maximo (labels champs, titres onglets, boutons).\nFiltrer par application si besoin (voir requête filtrée).",
+  sql:"SELECT\n    ml.LKEY,\n    ml.SUBKEY,\n    ml.VALUE              AS VALUE_EN,\n    '' AS VALUE_IBM_FR,\n    '' AS TRADUCTION_FINALE_FR,\n    ml.LOCALENAME,\n    ml.NODEID,\n    ml.OWNERTABLE,\n    ml.OWNERID\nFROM MAXLABELS ml\nWHERE ml.LOCALENAME = 'EN'\nORDER BY ml.LKEY, ml.SUBKEY;\n\n-- VERSION FILTRÉE PAR APPLICATION (ex: WOTRACK, ASSET, LOCATIONS) :\n-- WHERE ml.LOCALENAME = 'EN'\n--   AND ml.LKEY LIKE 'wotrack.%'   -- adapter selon application\n-- ORDER BY ml.LKEY, ml.SUBKEY;",
+  rows:[
+   {module:'Suivi des interventions', keys:{LKEY:'wotrack.mainrec.wonum',SUBKEY:'label'}, t:{VALUE:{en:'Work Order', ibm:{FR:'Intervention'}}}},
+   {module:'Suivi des interventions', keys:{LKEY:'wotrack.mainrec.schedstart',SUBKEY:'label'}, t:{VALUE:{en:'Scheduled Start', ibm:{FR:'Début planifié'}}}},
+   {module:'Suivi des interventions', keys:{LKEY:'wotrack.tab.plans',SUBKEY:'title'}, t:{VALUE:{en:'Plans', ibm:{FR:'Plans'}}}},
+   {module:'Actifs', keys:{LKEY:'asset.mainrec.assetnum',SUBKEY:'label'}, t:{VALUE:{en:'Asset', ibm:{FR:'Actif'}}}},
+   {module:'Actifs', keys:{LKEY:'asset.mainrec.parent',SUBKEY:'label'}, t:{VALUE:{en:'Parent Asset', ibm:{FR:'Actif parent'}}}},
+   {module:'Actifs', keys:{LKEY:'asset.button.movemodify',SUBKEY:'label'}, t:{VALUE:{en:'Move/Modify Asset', ibm:{FR:'Déplacer/Modifier un actif'}}}},
+   {module:'Stocks', keys:{LKEY:'inventor.mainrec.curbal',SUBKEY:'label'}, t:{VALUE:{en:'Current Balance', ibm:{FR:'Solde actuel'}}}},
+   {module:'Personnalisé (ZMAX)', keys:{LKEY:'zdash.tab.kpi',SUBKEY:'title'}, t:{VALUE:{en:'Maintenance KPIs', ibm:{}}}},
+   {module:'Personnalisé (ZMAX)', keys:{LKEY:'zdash.button.refresh',SUBKEY:'label'}, t:{VALUE:{en:'Refresh dashboard data', ibm:{}}}},
+   {module:'Personnalisé (ZMAX)', keys:{LKEY:'wotrack.zsection.title',SUBKEY:'title'}, t:{VALUE:{en:'Contractor follow-up', ibm:{}}}},
+  ]},
+ {id:'MAXMESSAGES', icon:'\u{1F7E2}', titleColor:'FF006064',
+  label:'Messages système', desc:'Erreurs, infos, avertissements',
+  keyCols:['MSGID','MSGKEY','MSGGROUP','SEVERITY'], extraCols:['LOCALENAME'],
+  texts:[{f:'VALUE', srcLabel:'VALEUR SOURCE (EN)', maxlen:4000}],
+  vol:'5 000 – 15 000 lignes',
+  sqlNote:"Messages d'erreur, avertissement et information affichés à l'utilisateur.\nNOTE : conserver les variables {0} {1}… dans la traduction FR.",
+  sql:"SELECT\n    mm.MSGID,\n    mm.MSGKEY,\n    mm.MSGGROUP,\n    mm.VALUE              AS VALUE_EN,\n    '' AS VALUE_IBM_FR,\n    '' AS TRADUCTION_FINALE_FR,\n    mm.SEVERITY,\n    mm.LOCALENAME\nFROM MAXMESSAGES mm\nWHERE mm.LOCALENAME = 'EN'\nORDER BY mm.MSGGROUP, mm.MSGID;",
+  rows:[
+   {module:'Actifs', keys:{MSGID:'BMXAA4195E',MSGKEY:'InvalidStatus',MSGGROUP:'asset',SEVERITY:'ERROR'}, t:{VALUE:{en:'The status {0} is not valid for asset {1}.', ibm:{FR:"Le statut {0} n'est pas valide pour l'actif {1}."}}}},
+   {module:'Suivi des interventions', keys:{MSGID:'BMXAA2660W',MSGKEY:'WOClosed',MSGGROUP:'workorder',SEVERITY:'WARNING'}, t:{VALUE:{en:'Work order {0} is closed and cannot be modified.', ibm:{FR:"L'intervention {0} est fermée et ne peut pas être modifiée."}}}},
+   {module:'Stocks', keys:{MSGID:'BMXAA1846E',MSGKEY:'InsufficientBalance',MSGGROUP:'inventory',SEVERITY:'ERROR'}, t:{VALUE:{en:'Insufficient balance for item {0} in storeroom {1}.', ibm:{FR:'Solde insuffisant pour l\'article {0} dans le magasin {1}.'}}}},
+   {module:'Achats', keys:{MSGID:'BMXAA0021E',MSGKEY:'POApprovalRequired',MSGGROUP:'po',SEVERITY:'ERROR'}, t:{VALUE:{en:'Purchase order {0} requires approval before printing.', ibm:{FR:'Le bon de commande {0} doit être approuvé avant impression.'}}}},
+   {module:'Personnalisé (ZMAX)', keys:{MSGID:'ZMAX0001E',MSGKEY:'ZCritAssetLock',MSGGROUP:'zmax',SEVERITY:'ERROR'}, t:{VALUE:{en:'Critical asset {0} cannot be modified without supervisor approval.', ibm:{}}}},
+   {module:'Personnalisé (ZMAX)', keys:{MSGID:'ZMAX0002I',MSGKEY:'ZSyncOK',MSGGROUP:'zmax',SEVERITY:'INFO'}, t:{VALUE:{en:'Synchronization with GMAO completed: {0} records updated.', ibm:{}}}},
+  ]},
+ {id:'MAXATTRIBUTE', icon:'\u{1F535}', titleColor:'FF1565C0',
+  label:'Attributs d\'objets', desc:'Titres & descriptions des champs',
+  keyCols:['OBJECTNAME','ATTRIBUTENAME'], extraCols:['LOCALENAME'],
+  texts:[{f:'TITLE', srcLabel:'TITLE SOURCE (EN)', maxlen:80},
+         {f:'REMARKS', srcLabel:'REMARKS SOURCE (EN)', maxlen:4000}],
+  vol:'3 000 – 10 000 lignes',
+  sqlNote:"Titres et descriptions des attributs de chaque objet Maximo.",
+  sql:"SELECT\n    ma.OBJECTNAME,\n    ma.ATTRIBUTENAME,\n    ma.TITLE              AS TITLE_EN,\n    '' AS TITLE_IBM_FR,\n    '' AS TITLE_FINALE_FR,\n    ma.REMARKS            AS REMARKS_EN,\n    '' AS REMARKS_IBM_FR,\n    '' AS REMARKS_FINALE_FR,\n    ma.LOCALENAME\nFROM MAXATTRIBUTE ma\nWHERE ma.LOCALENAME = 'EN'\n  AND (ma.TITLE IS NOT NULL OR ma.REMARKS IS NOT NULL)\nORDER BY ma.OBJECTNAME, ma.ATTRIBUTENAME;",
+  rows:[
+   {module:'Actifs', keys:{OBJECTNAME:'ASSET',ATTRIBUTENAME:'ASSETNUM'}, t:{TITLE:{en:'Asset', ibm:{FR:'Actif'}}, REMARKS:{en:'Asset Number', ibm:{FR:"Numéro d'actif"}}}},
+   {module:'Actifs', keys:{OBJECTNAME:'ASSET',ATTRIBUTENAME:'STATUS'}, t:{TITLE:{en:'Status', ibm:{FR:'Statut'}}, REMARKS:{en:'Asset status', ibm:{FR:"Statut de l'actif"}}}},
+   {module:'Suivi des interventions', keys:{OBJECTNAME:'WORKORDER',ATTRIBUTENAME:'WONUM'}, t:{TITLE:{en:'Work Order', ibm:{FR:'Intervention'}}, REMARKS:{en:'Work Order Number', ibm:{FR:"Numéro d'intervention"}}}},
+   {module:'Suivi des interventions', keys:{OBJECTNAME:'WORKORDER',ATTRIBUTENAME:'TARGCOMPDATE'}, t:{TITLE:{en:'Target Finish', ibm:{FR:'Fin prévue'}}, REMARKS:{en:'Target Finish Date', ibm:{FR:'Date de fin prévue'}}}},
+   {module:'Personnalisé (ZMAX)', keys:{OBJECTNAME:'ASSET',ATTRIBUTENAME:'ZFLOWRATE'}, t:{TITLE:{en:'Flow Rate', ibm:{}}, REMARKS:{en:'Nominal flow rate of the equipment in liters per minute', ibm:{}}}},
+   {module:'Personnalisé (ZMAX)', keys:{OBJECTNAME:'WORKORDER',ATTRIBUTENAME:'ZCONTRACTOR'}, t:{TITLE:{en:'Contractor', ibm:{}}, REMARKS:{en:'External contractor in charge of the work', ibm:{}}}},
+  ]},
+ {id:'APPLICATION', icon:'\u{1F7E0}', titleColor:'FF2E7D32',
+  label:'Applications', desc:'Noms dans les menus',
+  keyCols:['APP'], extraCols:['LOCALENAME'],
+  texts:[{f:'DESCRIPTION', srcLabel:'DESCRIPTION SOURCE (EN)', maxlen:255}],
+  vol:'100 – 400 lignes',
+  sqlNote:"Noms et descriptions des applications Maximo (menus de navigation).",
+  sql:"SELECT\n    a.APP,\n    a.DESCRIPTION         AS DESCRIPTION_EN,\n    '' AS DESCRIPTION_IBM_FR,\n    '' AS TRADUCTION_FINALE_FR,\n    a.LOCALENAME\nFROM APPLICATION a\nWHERE a.LOCALENAME = 'EN'\nORDER BY a.APP;",
+  rows:[
+   {module:'Gestion du travail', keys:{APP:'WOTRACK'}, t:{DESCRIPTION:{en:'Work Order Tracking', ibm:{FR:'Suivi des interventions'}}}},
+   {module:'Gestion des actifs', keys:{APP:'ASSET'}, t:{DESCRIPTION:{en:'Assets', ibm:{FR:'Actifs'}}}},
+   {module:'Gestion des actifs', keys:{APP:'LOCATIONS'}, t:{DESCRIPTION:{en:'Locations', ibm:{FR:'Emplacements'}}}},
+   {module:'Stocks', keys:{APP:'INVENTOR'}, t:{DESCRIPTION:{en:'Inventory', ibm:{FR:'Stocks'}}}},
+   {module:'Stocks', keys:{APP:'ITEM'}, t:{DESCRIPTION:{en:'Item Master', ibm:{FR:'Articles'}}}},
+   {module:'Achats', keys:{APP:'PO'}, t:{DESCRIPTION:{en:'Purchase Orders', ibm:{FR:'Bons de commande'}}}},
+   {module:'Centre de services', keys:{APP:'SR'}, t:{DESCRIPTION:{en:'Service Requests', ibm:{FR:'Demandes de service'}}}},
+   {module:'Personnalisé (ZMAX)', keys:{APP:'ZDASH'}, t:{DESCRIPTION:{en:'Maintenance Dashboard', ibm:{}}}},
+  ]},
+ {id:'LONGDESCRIPTION', icon:'\u{1F7E4}', titleColor:'FF4E342E',
+  label:'Descriptions longues', desc:'Aides, notices (peut contenir du HTML)',
+  keyCols:['LDKEY','LDOWNERTABLE','LDOWNERCOL'], extraCols:['LOCALENAME'],
+  texts:[{f:'LDTEXT', srcLabel:'TEXTE SOURCE (EN)', maxlen:0, html:true}],
+  vol:'variable',
+  sqlNote:"Descriptions longues traduisibles. Peut contenir du HTML.\nFiltrer par LDOWNERTABLE si volume trop important.",
+  sql:"SELECT\n    ld.LDKEY,\n    ld.LDOWNERTABLE,\n    ld.LDOWNERCOL,\n    ld.LDTEXT             AS LDTEXT_EN,\n    '' AS LDTEXT_IBM_FR,\n    '' AS LDTEXT_FINALE_FR,\n    ld.LOCALENAME\nFROM LONGDESCRIPTION ld\nWHERE ld.LOCALENAME = 'EN'\n  AND ld.LDTEXT IS NOT NULL\n  AND LENGTH(TRIM(ld.LDTEXT)) > 0\nORDER BY ld.LDOWNERTABLE, ld.LDKEY;\n\n-- FILTRER PAR TABLE :\n-- AND ld.LDOWNERTABLE IN ('ASSET','WORKORDER','LOCATIONS')",
+  rows:[
+   {module:'Plans de travail', keys:{LDKEY:'2041',LDOWNERTABLE:'JOBPLAN',LDOWNERCOL:'DESCRIPTION'}, t:{LDTEXT:{en:'<b>Pump seal replacement procedure.</b> Isolate the pump, drain the casing, remove the old mechanical seal and install the new kit. Torque values per manufacturer manual.', ibm:{}}}},
+   {module:'Actifs', keys:{LDKEY:'3155',LDOWNERTABLE:'ASSET',LDOWNERCOL:'DESCRIPTION'}, t:{LDTEXT:{en:'High-capacity centrifugal pump used for the main water supply loop. Installed 2019, last overhaul 2024.', ibm:{}}}},
+   {module:'Centre de services', keys:{LDKEY:'5872',LDOWNERTABLE:'TICKET',LDOWNERCOL:'DESCRIPTION'}, t:{LDTEXT:{en:'Standard template for water leak reports. Include building, floor and estimated flow.', ibm:{}}}},
+  ]},
+];
+
+/* SQL annexes (dimensionnement + contrôle FR existants) — repris du fichier client */
+const SQL_EXTRA = [
+ {id:'VOLUME', name:"VOLUME — Statistiques\nNombre d'éléments\npar table",
+  note:"▶ \u{1F4CA} Dimensionnement\nEstimer la charge de traduction avant de commencer.\nExécuter en premier pour planifier le projet.",
+  sql:"SELECT\n    'SYNONYMDOMAIN'   AS TABLE_MAXIMO,\n    COUNT(*)          AS NB_LIGNES_EN,\n    'Valeurs de domaines (listes)'  AS DESCRIPTION\nFROM SYNONYMDOMAIN WHERE LOCALENAME = 'EN'\nUNION ALL\nSELECT 'MAXLABELS', COUNT(*),\n    'Labels champs, onglets, boutons'\nFROM MAXLABELS WHERE LOCALENAME = 'EN'\nUNION ALL\nSELECT 'MAXMESSAGES', COUNT(*),\n    'Messages système'\nFROM MAXMESSAGES WHERE LOCALENAME = 'EN'\nUNION ALL\nSELECT 'MAXATTRIBUTE', COUNT(*),\n    'Attributs d objets (title non null)'\nFROM MAXATTRIBUTE WHERE LOCALENAME='EN' AND TITLE IS NOT NULL\nUNION ALL\nSELECT 'APPLICATION', COUNT(*),\n    'Noms d applications'\nFROM APPLICATION WHERE LOCALENAME = 'EN'\nUNION ALL\nSELECT 'LONGDESCRIPTION', COUNT(*),\n    'Descriptions longues (non vides)'\nFROM LONGDESCRIPTION\nWHERE LOCALENAME='EN' AND LDTEXT IS NOT NULL\nORDER BY NB_LIGNES_EN DESC;"},
+ {id:'CONTROLE', name:"CONTRÔLE — FR existants\nVérifier ce qui\nexiste déjà",
+  note:"▶ \u{1F4CB} Avant import\nVérifier les traductions FR déjà présentes.\nÀ exécuter AVANT l'import pour éviter les doublons.",
+  sql:"SELECT 'SYNONYMDOMAIN' AS TABLE_NAME,\n    sd.DOMAINID, sd.VALUE, sd.DESCRIPTION, sd.LOCALENAME\nFROM SYNONYMDOMAIN sd WHERE sd.LOCALENAME = 'FR'\nUNION ALL\nSELECT 'MAXLABELS', ml.LKEY, ml.SUBKEY, ml.VALUE, ml.LOCALENAME\nFROM MAXLABELS ml WHERE ml.LOCALENAME = 'FR'\nUNION ALL\nSELECT 'MAXMESSAGES', mm.MSGID, mm.MSGGROUP, mm.VALUE, mm.LOCALENAME\nFROM MAXMESSAGES mm WHERE mm.LOCALENAME = 'FR'\nUNION ALL\nSELECT 'APPLICATION', a.APP, '', a.DESCRIPTION, a.LOCALENAME\nFROM APPLICATION a WHERE a.LOCALENAME = 'FR'\nORDER BY TABLE_NAME;"},
+];
+
+/* Listes de validation (reprises du fichier client) */
+const DV_CHOIX = "✅ Conserver traduction IBM,✏️ Modifier,⬜ Non obligatoire,🔄 En cours";
+const DV_STATUT = "À traiter,En cours,✅ Validé,⚠️ À revoir,🚫 Non applicable";
+const DV_PRIO = "🔴 Haute,🟡 Moyenne,🟢 Faible";
+const DV_IMPORT = "En attente,En cours,Importé OK,Erreurs import,Validé Maximo";
+
+/* ================== STATE ================== */
+const defaultState = () => ({
+  selectedTable:null, selectedLangs:['FR'],
+  checked:new Set(),          // item ids
+  translations:{},            // `${itemId}__${lang}` -> {google?, manual?, choice?:'ibm'|'google'|'manual'|'skip'}
+  expandedEdit:null, search:'', search2:'', filter:'all',
+  includeSql:true, includeMxloader:true, styled:true,
+  dataSource:'demo', apiUrl:'', sqlDsn:'',
+  customSql:{},
+});
+let state = defaultState();
+
+/* ================== ITEMS (unités traduisibles) ================== */
+function tableById(id){return TABLES.find(t=>t.id===id)||null;}
+function itemsOf(tb){
+  const out=[];
+  tb.rows.forEach((row,ri)=>{
+    tb.texts.forEach(tx=>{
+      const unit=row.t[tx.f];
+      if(!unit||!unit.en)return;
+      out.push({
+        id:`${tb.id}|${ri}|${tx.f}`,
+        table:tb.id, rowIdx:ri, field:tx.f, row, tx,
+        module:row.module, keys:row.keys,
+        en:unit.en, ibm:unit.ibm||{},
+        maxlen:tx.maxlen||0, html:!!tx.html,
+      });
+    });
+  });
+  return out;
+}
+function keyLabel(it){return Object.values(it.keys).join(' · ');}
+function esc(s){return (s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function trunc(s,n){s=s==null?'':String(s);return s.length>n?s.slice(0,n-1)+'…':s;}
+
+/* ================== CHOIX / RÉSOLUTION ================== */
+function entryOf(key){return state.translations[key]||{};}
+function effChoice(it,l){
+  const e=entryOf(`${it.id}__${l}`);
+  if(e.choice)return e.choice;
+  if(e.manual)return 'manual';
+  if(it.ibm[l])return 'ibm';
+  if(e.google)return 'google';
+  return null;
+}
+function effText(it,l){
+  const e=entryOf(`${it.id}__${l}`);
+  const c=effChoice(it,l);
+  if(c==='ibm')return it.ibm[l]||'';
+  if(c==='manual')return e.manual||'';
+  if(c==='google')return e.google||'';
+  return '';
+}
+function isDecided(it,l){return !!entryOf(`${it.id}__${l}`).choice;}
+
+/* ===== Contraintes Maximo : longueur, variables {n}, HTML ===== */
+function checkConstraints(it,text){
+  const w=[];
+  if(!text)return w;
+  if(it.maxlen&&text.length>it.maxlen)w.push(`Dépasse la limite DB de ${it.maxlen} caractères (${text.length})`);
+  (it.en.match(/\{\d+\}/g)||[]).forEach(p=>{if(!text.includes(p))w.push(`Variable ${p} absente de la traduction`);});
+  if(it.html&&/<[a-z][^>]*>/i.test(it.en)&&!/<[a-z][^>]*>/i.test(text))w.push('Balises HTML du texte source perdues');
+  return w;
+}
+function cellWarnings(it,l){
+  const c=effChoice(it,l);
+  if(c==='ibm'||!c)return [];
+  return checkConstraints(it,effText(it,l));
+}
+
+/* ================== TOASTS ================== */
+function toast(msg,type='info'){
+  const c=document.getElementById('toasts');
+  const t=document.createElement('div');
+  t.className='toast '+type;
+  t.innerHTML=`<span class="tdot"></span><span>${msg}</span>`;
+  c.appendChild(t);
+  setTimeout(()=>{t.style.opacity='0';t.style.transition='opacity .3s';setTimeout(()=>t.remove(),300);},3400);
+}
+
+/* ================== COLUMN 1 : TABLES ================== */
+function renderCol1(){
+  const body=document.getElementById('col1-body');
+  let html=`<div class="search-box"><span class="sicon">\u{1F50D}</span><input type="text" id="search-mod" placeholder="Rechercher une table..." value="${esc(state.search)}"></div>`;
+  const f=state.search.toLowerCase();
+  html+=`<div class="section-label">Tables de traduction MAS 9</div>`;
+  TABLES.forEach(tb=>{
+    if(f&&!tb.id.toLowerCase().includes(f)&&!tb.label.toLowerCase().includes(f)&&!tb.desc.toLowerCase().includes(f))return;
+    const act=state.selectedTable===tb.id;
+    const its=itemsOf(tb);
+    const nIbm=its.filter(it=>it.ibm.FR).length;
+    html+=`<div class="os${act?' active':''}" onclick="selectTable('${tb.id}')">
+      <div>${tb.icon} <span class="os-code">${tb.id}</span></div>
+      <div class="os-label" style="margin-top:1px;">${esc(tb.label)}</div>
+      <div class="os-meta">${esc(tb.desc)} — ${its.length} éléments · ${nIbm} avec trad. IBM</div></div>`;
+  });
+  html+=`<div class="section-label" style="margin-top:14px;">Processus client</div>
+  <div style="font-size:11px;color:var(--mut);line-height:1.8;padding:0 4px;">
+  \u{1F5C4} Extraction SQL (onglet généré)<br>
+  \u{1F7E3} Proposition IBM / Maximo<br>
+  ⚖️ Arbitrage : IBM · Google · Manuel<br>
+  \u{1F7E2} Traduction finale → MxLoader</div>`;
+  body.innerHTML=html;
+  const inp=document.getElementById('search-mod');
+  inp.addEventListener('input',e=>{state.search=e.target.value;renderCol1();const i2=document.getElementById('search-mod');i2.focus();i2.setSelectionRange(i2.value.length,i2.value.length);});
+}
+const initTables=new Set();
+function selectTable(id){
+  state.selectedTable=id;
+  if(!initTables.has(id)){
+    itemsOf(tableById(id)).forEach(it=>state.checked.add(it.id)); // tout coché par défaut (flux client)
+    initTables.add(id);
+  }
+  state.expandedEdit=null;state.filter='all';state.search2='';
+  renderAll();
+  toast(`Table <strong>${id}</strong> chargée`,'info');
+}
+
+/* ================== COLUMN 2 : ÉLÉMENTS ================== */
+function itemVisible(it){
+  if(state.filter==='ibm'&&!state.selectedLangs.some(l=>it.ibm[l]))return false;
+  if(state.filter==='noibm'&&state.selectedLangs.some(l=>it.ibm[l]))return false;
+  if(state.filter==='missing'&&!state.selectedLangs.some(l=>effChoice(it,l)===null))return false;
+  if(state.search2){
+    const s=state.search2.toLowerCase();
+    if(!keyLabel(it).toLowerCase().includes(s)&&!it.en.toLowerCase().includes(s)&&!it.module.toLowerCase().includes(s))return false;
+  }
+  return true;
+}
+function renderCol2(){
+  const body=document.getElementById('col2-body');
+  const titleEl=document.getElementById('col2-title');
+  const descEl=document.getElementById('col2-desc');
+  const tb=tableById(state.selectedTable);
+  if(!tb){
+    titleEl.textContent='Éléments traduisibles';
+    descEl.textContent='Choisissez une table de traduction';
+    body.innerHTML=`<div class="empty"><div class="ic">\u{1F50D}</div><div class="ti">Aucune table sélectionnée</div><div class="de">Choisissez une table Maximo dans la colonne de gauche.</div></div>`;
+    return;
+  }
+  titleEl.innerHTML=`${tb.icon} ${tb.id}`;
+  descEl.textContent=tb.label+' — '+tb.desc;
+  const items=itemsOf(tb);
+  let html='';
+
+  html+=`<div class="section-label">Langues cibles — source : EN</div><div class="lang-row">`;
+  html+=`<div class="lang-chip src"><span class="flag">${LANGUAGES.EN.flag}</span>EN</div>`;
+  Object.keys(LANGUAGES).forEach(code=>{
+    if(code==='EN')return;
+    const act=state.selectedLangs.includes(code);
+    html+=`<div class="lang-chip${act?' active':''}" onclick="toggleLang('${code}')" title="${esc(LANGUAGES[code].name)}"><span class="flag">${LANGUAGES[code].flag}</span>${code}</div>`;
+  });
+  html+=`</div>`;
+
+  html+=`<div class="actions-bar">
+    <button class="btn" onclick="selectAll()">☑ Tout</button>
+    <button class="btn" onclick="deselectAll()">☐ Aucun</button>
+    <button class="btn violet" onclick="autoTranslateMissing()">\u{1F916} Auto-traduire les manquants</button>
+    <button class="btn" onclick="keepAllIbm()">✅ Conserver tout l'IBM</button>
+    <button class="btn" onclick="openSql(tb.id)" title="Requête d'extraction de cette table">\u{1F5C4} SQL</button>
+  </div>`;
+
+  html+=`<div class="filters-bar">
+    <span class="fchip${state.filter==='all'?' active':''}" onclick="setFilter('all')">Tout</span>
+    <span class="fchip${state.filter==='ibm'?' active':''}" onclick="setFilter('ibm')">Avec trad. IBM</span>
+    <span class="fchip${state.filter==='noibm'?' active':''}" onclick="setFilter('noibm')">Sans trad. IBM</span>
+    <span class="fchip${state.filter==='missing'?' active':''}" onclick="setFilter('missing')">Non arbitrés</span>
+  </div>`;
+
+  html+=`<div class="search-box"><span class="sicon">\u{1F50D}</span><input type="text" id="search-items" placeholder="Filtrer les éléments (clé, texte, module)..." value="${esc(state.search2)}"></div>`;
+
+  const allChecked=items.length&&items.every(it=>state.checked.has(it.id));
+  html+=`<div class="select-all-row" onclick="toggleSelectAllRow()">
+    <div class="fcheck${allChecked?' checked':''}">✓</div>
+    <span>${items.length} éléments — ${state.checked.size} sélectionné(s)</span></div>`;
+
+  let lastModule;
+  items.forEach(it=>{
+    if(!itemVisible(it))return;
+    if(it.module!==lastModule){lastModule=it.module;
+      html+=`<div class="rel-head">\u{1F4C2} ${esc(it.module)}</div>`;}
+    html+=itemCard(it);
+  });
+  body.innerHTML=html;
+  const inp2=document.getElementById('search-items');
+  if(inp2)inp2.addEventListener('input',e=>{state.search2=e.target.value;renderCol2();const i2=document.getElementById('search-items');i2.focus();i2.setSelectionRange(i2.value.length,i2.value.length);});
+}
+function itemCard(it){
+  const checked=state.checked.has(it.id);
+  const editing=state.expandedEdit===it.id;
+  let html=`<div class="field-card${checked?' selected':''}">`;
+  html+=`<div class="fc-top">`;
+  html+=`<div class="fcheck${checked?' checked':''}" onclick="toggleItem('${it.id}')">✓</div>`;
+  html+=`<span class="fname">${esc(keyLabel(it))}</span>`;
+  html+=`<span class="tbadge TEXT">${it.field}${it.maxlen?' ≤'+it.maxlen:''}</span></div>`;
+  html+=`<div class="fsource"><label>Source (EN)</label>${esc(it.en)}</div>`;
+  state.selectedLangs.forEach(l=>{
+    if(it.ibm[l])html+=`<div class="fsource ibm"><label>Traduction IBM / Maximo (${l})</label>${esc(it.ibm[l])}</div>`;
+  });
+
+  if(checked&&state.selectedLangs.length){
+    html+=`<div class="badges">`;
+    state.selectedLangs.forEach(l=>{
+      const c=effChoice(it,l);
+      const dec=isDecided(it,l)?'':' (à arbitrer)';
+      if(c==='ibm') html+=`<span class="sbadge ibmb">${LANGUAGES[l].flag} ${l} — IBM conservé${dec}</span>`;
+      else if(c==='manual') html+=`<span class="sbadge custom">${LANGUAGES[l].flag} ${l} — Personnalisé</span>`;
+      else if(c==='google') html+=`<span class="sbadge auto">${LANGUAGES[l].flag} ${l} — Google${dec}</span>`;
+      else if(c==='skip') html+=`<span class="sbadge none">${LANGUAGES[l].flag} ${l} — Non obligatoire</span>`;
+      else html+=`<span class="sbadge needs">${LANGUAGES[l].flag} ${l} — Traduction requise</span>`;
+      cellWarnings(it,l).forEach(w=>html+=`<span class="sbadge warn" title="${esc(w)}">⚠ ${esc(trunc(w,36))}</span>`);
+    });
+    html+=`</div>`;
+    html+=`<div class="edit-btn-row"><button class="btn" style="font-size:11px;padding:4px 10px;" onclick="toggleEdit('${it.id}')">${editing?'✕ Fermer':'✏️ Traduire manuellement'}</button></div>`;
+    if(editing){
+      state.selectedLangs.forEach(l=>{
+        const key=`${it.id}__${l}`;
+        const e=entryOf(key);
+        html+=`<div class="inline-edit"><div class="edit-lang">${LANGUAGES[l].flag} ${l} — ${esc(LANGUAGES[l].name)}${it.maxlen?' · max '+it.maxlen+' car.':''}</div>
+        <textarea data-key="${key}" onchange="saveManual(this)" placeholder="Saisir la traduction...">${esc(e.manual||'')}</textarea></div>`;
+      });
+    }
+  }
+  html+=`</div>`;
+  return html;
+}
+function setFilter(v){state.filter=v;renderCol2();}
+function toggleLang(code){
+  const i=state.selectedLangs.indexOf(code);
+  i>=0?state.selectedLangs.splice(i,1):state.selectedLangs.push(code);
+  renderCol2();renderCol3();
+}
+function toggleItem(id){
+  state.checked.has(id)?state.checked.delete(id):state.checked.add(id);
+  renderCol2();renderCol3();
+}
+function selectAll(){
+  const tb=tableById(state.selectedTable);if(!tb)return;
+  itemsOf(tb).forEach(it=>state.checked.add(it.id));
+  renderCol2();renderCol3();
+}
+function deselectAll(){const tb=tableById(state.selectedTable);if(!tb)return;itemsOf(tb).forEach(it=>state.checked.delete(it.id));renderCol2();renderCol3();}
+function toggleSelectAllRow(){
+  const tb=tableById(state.selectedTable);if(!tb)return;
+  const its=itemsOf(tb);
+  its.every(it=>state.checked.has(it.id))?deselectAll():selectAll();
+}
+function keepAllIbm(){
+  const tb=tableById(state.selectedTable);if(!tb)return;
+  let n=0;
+  itemsOf(tb).forEach(it=>{
+    if(!state.checked.has(it.id))return;
+    state.selectedLangs.forEach(l=>{
+      if(it.ibm[l]){const e=state.translations[`${it.id}__${l}`]||(state.translations[`${it.id}__${l}`]={});
+        if(e.choice!=='manual'){e.choice='ibm';n++;}}
+    });
+  });
+  renderCol2();renderCol3();
+  toast(`${n} traduction(s) IBM conservée(s) (validées)`,'success');
+}
+function toggleEdit(id){state.expandedEdit=state.expandedEdit===id?null:id;renderCol2();}
+function saveManual(ta){
+  const key=ta.dataset.key;
+  const v=ta.value.trim();
+  const e=state.translations[key]||(state.translations[key]={});
+  if(v){e.manual=v;e.choice='manual';}
+  else{delete e.manual;if(e.choice==='manual')delete e.choice;
+    if(!e.google&&!e.choice)delete state.translations[key];}
+  renderCol2();renderCol3();
+}
+
+/* ================== AUTO-TRADUCTION (Google) ================== */
+const MINI_DICT={
+  FR:{'Work Order':'Intervention','Asset':'Actif','Status':'Statut','Approved':'Approuvé','Closed':'Fermé','Inventory':'Stocks','Refresh':'Actualiser','Contractor':'Sous-traitant','Critical':'Critique','equipment':'équipement','dashboard':'tableau de bord','Maintenance':'Maintenance'},
+};
+async function autoTranslateMissing(){
+  const tb=tableById(state.selectedTable);
+  if(!tb||!state.checked.size||!state.selectedLangs.length){
+    toast('Sélectionnez d\'abord des éléments et des langues','warning');return;
+  }
+  const jobs=[];
+  itemsOf(tb).forEach(it=>{
+    if(!state.checked.has(it.id))return;
+    state.selectedLangs.forEach(l=>{
+      const key=`${it.id}__${l}`;
+      const e=entryOf(key);
+      if(!e.google&&!e.manual&&!it.ibm[l])jobs.push({key,text:it.en,lang:l});
+    });
+  });
+  if(!jobs.length){toast('Aucun élément sans traduction (IBM, Google ou manuelle)','info');return;}
+  toast(`Traduction Google de ${jobs.length} élément(s)...`,'info');
+  let backend=false;
+  try{
+    const res=await fetch('/translate',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({items:jobs.map(j=>({text:j.text,target:j.lang}))})});
+    if(res.ok){
+      const data=await res.json();
+      jobs.forEach((j,i)=>{
+        const t=data.results&&data.results[i];
+        if(t){const e=state.translations[j.key]||(state.translations[j.key]={});e.google=t;}
+      });
+      backend=true;
+    }
+  }catch(e){/* mode statique — simulation */}
+  if(!backend){
+    jobs.forEach(j=>{
+      let t=j.text;
+      const dict=MINI_DICT[j.lang];
+      if(dict)Object.entries(dict).forEach(([en,tr])=>{t=t.replace(new RegExp('\\b'+en+'\\b','g'),tr);});
+      const e=state.translations[j.key]||(state.translations[j.key]={});
+      e.google=`[${j.lang}] ${t}`;
+    });
+  }
+  renderCol2();renderCol3();
+  toast(`${jobs.length} traduction(s) Google ${backend?'récupérée(s)':'simulée(s) — lancez le backend pour la traduction réelle'}`,backend?'success':'warning');
+}
+
+/* ================== COLUMN 3 : SUIVI & EXPORT ================== */
+function renderCol3(){
+  const body=document.getElementById('col3-body');
+  const tb=tableById(state.selectedTable);
+  if(!tb||!state.checked.size||!state.selectedLangs.length){
+    body.innerHTML=`<div class="empty"><div class="ic">\u{1F4CB}</div><div class="ti">Aucun élément sélectionné</div><div class="de">Sélectionnez une table, des éléments et des langues cibles.</div></div>`;
+    return;
+  }
+  const items=itemsOf(tb).filter(it=>state.checked.has(it.id));
+  let ibmN=0,custN=0,decided=0,warnN=0,total=items.length*state.selectedLangs.length;
+  items.forEach(it=>state.selectedLangs.forEach(l=>{
+    const c=effChoice(it,l);
+    if(c==='ibm')ibmN++;
+    else if(c==='manual'||c==='google')custN++;
+    if(isDecided(it,l))decided++;
+    warnN+=cellWarnings(it,l).length;
+  }));
+  let html=`<div class="stats-bar">
+    <div class="stat-card"><div class="v">${items.length}</div><div class="l">Éléments</div></div>
+    <div class="stat-card"><div class="v">${state.selectedLangs.length}</div><div class="l">Langues</div></div>
+    <div class="stat-card green"><div class="v">${ibmN}</div><div class="l">IBM</div></div>
+    <div class="stat-card amber"><div class="v">${custN}</div><div class="l">Custom</div></div>
+  </div>`;
+  html+=`<div class="stat-row2"><span>⚖️ Arbitré : <b>${decided}/${total}</b></span><span class="${warnN?'warn-ink':''}">⚠ Contraintes : <b>${warnN}</b></span></div>`;
+
+  html+=`<div class="section-label">Progression par langue</div>`;
+  state.selectedLangs.forEach(l=>{
+    let done=0;
+    items.forEach(it=>{if(effChoice(it,l))done++;});
+    const pct=items.length?Math.round(done/items.length*100):0;
+    const cls=pct===100?'green':pct>50?'brand':'amber';
+    html+=`<div class="prog-item"><div class="prog-head"><span class="prog-lang">${LANGUAGES[l].flag} ${esc(LANGUAGES[l].name)}</span><span class="prog-pct">${pct}%</span></div>
+    <div class="prog-track"><div class="prog-fill ${cls}" style="width:${pct}%"></div></div></div>`;
+  });
+
+  html+=`<div class="section-label">Options d'export (format suivi client)</div>`;
+  html+=tgl('includeSql','Onglet Requêtes SQL','Extraction DBeaver/psql');
+  html+=tgl('includeMxloader','Onglet Format MxLoader','Prêt pour import');
+  html+=tgl('styled','Mise en forme complète','Couleurs, listes déroulantes');
+
+  html+=`<div class="section-label">Aperçu (TRADUCTION FINALE)</div>
+  <div class="preview-wrap"><table class="preview-table"><thead><tr><th>Clé</th><th>EN</th><th>IBM</th>`;
+  state.selectedLangs.forEach(l=>html+=`<th>${LANGUAGES[l].flag} Finale</th>`);
+  html+=`</tr></thead><tbody>`;
+  items.slice(0,10).forEach(it=>{
+    html+=`<tr><td style="font-family:var(--mono);font-size:10px;font-weight:600;color:var(--brand);white-space:nowrap;">${esc(trunc(keyLabel(it),24))}</td>`;
+    html+=`<td class="c-src">${esc(trunc(it.en,26))}</td>`;
+    html+=`<td class="c-ibm">${it.ibm.FR?esc(trunc(it.ibm.FR,26)):'—'}</td>`;
+    state.selectedLangs.forEach(l=>{
+      const c=effChoice(it,l);
+      if(c==='ibm')html+=`<td class="c-nat">${esc(trunc(it.ibm[l],26))}</td>`;
+      else if(c==='manual'||c==='google')html+=`<td class="c-auto">${esc(trunc(effText(it,l),26))}</td>`;
+      else if(c==='skip')html+=`<td style="color:var(--mut2);">n/a</td>`;
+      else html+=`<td class="c-need">—</td>`;
+    });
+    html+=`</tr>`;
+  });
+  if(items.length>10)html+=`<tr><td colspan="${3+state.selectedLangs.length}" style="text-align:center;color:var(--mut);font-size:11px;">+ ${items.length-10} autres...</td></tr>`;
+  html+=`</tbody></table></div>`;
+
+  html+=`<button class="btn-generate" onclick="openReview()"><span>⚖️</span> Arbitrer &amp; générer le suivi Excel</button>`;
+  html+=`<button class="btn-reset" onclick="resetAll()">↺ Réinitialiser</button>`;
+  body.innerHTML=html;
+  body.querySelectorAll('.toggle-row').forEach(r=>r.addEventListener('click',()=>{state[r.dataset.k]=!state[r.dataset.k];renderCol3();}));
+}
+function tgl(k,label,hint){
+  return `<div class="toggle-row" data-k="${k}"><div class="sw${state[k]?' on':''}"><div class="knob"></div></div><span class="tg-label">${label}</span><span class="tg-hint">${hint}</span></div>`;
+}
+function resetAll(){
+  const ds=state.dataSource,au=state.apiUrl,sq=state.sqlDsn;
+  const cs=state.customSql;
+  state=defaultState();state.dataSource=ds;state.apiUrl=au;state.sqlDsn=sq;state.customSql=cs;
+  initTables.clear();
+  renderAll();toast('Configuration réinitialisée','info');
+}
+function renderAll(){renderCol1();renderCol2();renderCol3();}
+
+/* ================== ARBITRAGE (CHOIX CLIENT) ================== */
+function openReview(){
+  const tb=tableById(state.selectedTable);
+  if(!tb||!state.checked.size||!state.selectedLangs.length){toast('Configuration incomplète','warning');return;}
+  renderReview();
+  document.getElementById('review-modal').classList.add('open');
+}
+function closeReview(){document.getElementById('review-modal').classList.remove('open');}
+function renderReview(){
+  const tb=tableById(state.selectedTable);
+  const items=itemsOf(tb).filter(it=>state.checked.has(it.id));
+  let html=`<div class="rv-hint">CHOIX CLIENT — pour chaque élément et langue :
+    <span class="sbadge ibmb">IBM</span> = conserver la traduction IBM/Maximo ·
+    <span class="sbadge auto">Google</span> = traduction automatique (statut « à revoir ») ·
+    <span class="sbadge custom">Manuelle</span> = votre saisie ·
+    <span class="sbadge none">N/O</span> = non obligatoire (code, acronyme).
+    Les contraintes DB (longueur, variables {0}, HTML) sont contrôlées.</div>`;
+  items.forEach(it=>{
+    html+=`<div class="rv-field"><span class="fname">${esc(keyLabel(it))} · ${it.field}</span><span class="rv-srctxt" title="${esc(it.en)}">« ${esc(trunc(it.en,66))} »</span></div>`;
+    state.selectedLangs.forEach(l=>{
+      const key=`${it.id}__${l}`;
+      const e=entryOf(key);
+      const c=effChoice(it,l);
+      const decided=isDecided(it,l);
+      html+=`<div class="rv-row"><span class="rv-lang">${LANGUAGES[l].flag} ${l}</span><div class="rv-opts">`;
+      if(it.ibm[l]){
+        html+=`<div class="rv-opt nat${c==='ibm'?' sel':''}" onclick="rvChoose('${key}','ibm')">
+          <span class="rv-k">IBM</span><span class="rv-t">${esc(trunc(it.ibm[l],52))}</span></div>`;
+      }
+      html+=`<div class="rv-opt aut${c==='google'?' sel':''}${e.google?'':' off'}" onclick="rvChoose('${key}','google')">
+        <span class="rv-k">Google</span><span class="rv-t">${e.google?esc(trunc(e.google,52)):'— pas encore traduit —'}</span></div>`;
+      html+=`<div class="rv-opt man${c==='manual'?' sel':''}" onclick="rvChoose('${key}','manual')">
+        <span class="rv-k">Manuelle</span>
+        <input type="text" class="rv-in" data-key="${key}" value="${esc(e.manual||'')}" placeholder="Saisir..."
+          onclick="event.stopPropagation()" onchange="rvManual(this)"></div>`;
+      html+=`<div class="rv-opt skp${c==='skip'?' sel':''}" onclick="rvChoose('${key}','skip')" title="Non obligatoire (code, acronyme...)">
+        <span class="rv-k">N/O</span></div>`;
+      if(!decided&&c)html+=`<span class="sbadge needs" style="align-self:center;" title="Proposition par défaut — cliquez pour valider">à valider</span>`;
+      if(!c)html+=`<span class="sbadge needs" style="align-self:center;">vide</span>`;
+      const ws=cellWarnings(it,l);
+      ws.forEach(w=>html+=`<span class="sbadge warn" style="align-self:center;">⚠ ${esc(trunc(w,42))}</span>`);
+      html+=`</div></div>`;
+    });
+  });
+  document.getElementById('review-body').innerHTML=html;
+}
+function rvChoose(key,kind){
+  const e=state.translations[key]||(state.translations[key]={});
+  if(kind==='google'&&!e.google){toast('Pas de traduction Google — utilisez « Auto-traduire les manquants »','warning');return;}
+  if(kind==='manual'&&!e.manual){
+    const inp=document.querySelector(`.rv-in[data-key="${key}"]`);
+    if(inp)inp.focus();
+    return;
+  }
+  e.choice=kind;
+  renderReview();renderCol2();renderCol3();
+}
+function rvManual(inp){
+  const key=inp.dataset.key;
+  const v=inp.value.trim();
+  const e=state.translations[key]||(state.translations[key]={});
+  if(v){e.manual=v;e.choice='manual';}
+  else{delete e.manual;if(e.choice==='manual')delete e.choice;
+    if(!e.google&&!e.choice)delete state.translations[key];}
+  renderReview();renderCol2();renderCol3();
+}
+async function rvAutoAll(){await autoTranslateMissing();renderReview();}
+function rvKeepIbm(){keepAllIbm();renderReview();}
+function confirmGenerate(){closeReview();generateExcel();}
+
+/* ================== ÉDITEUR DE REQUÊTES SQL ================== */
+function defaultSqlOf(id){
+  const tb=tableById(id);
+  if(tb)return tb.sql;
+  const x=SQL_EXTRA.find(e=>e.id===id);
+  return x?x.sql:'';
+}
+function sqlOf(id){return state.customSql[id]||defaultSqlOf(id);}
+function sqlBlocks(){
+  return TABLES.map(tb=>({id:tb.id,icon:tb.icon,label:tb.label}))
+    .concat(SQL_EXTRA.map(x=>({id:x.id,icon:'\u{1F4CA}',label:x.name.split('\n')[0]})));
+}
+let tmpSql={};
+function openSql(focusId){
+  tmpSql={};
+  sqlBlocks().forEach(b=>tmpSql[b.id]=sqlOf(b.id));
+  renderSql(focusId);
+  document.getElementById('sql-modal').classList.add('open');
+  if(focusId)setTimeout(()=>{const ta=document.querySelector(`.sql-ta[data-id="${focusId}"]`);if(ta)ta.scrollIntoView({block:'start'});},50);
+}
+function closeSql(){document.getElementById('sql-modal').classList.remove('open');}
+function renderSql(){
+  let html=`<div class="rv-hint">Requêtes utilisées pour extraire les éléments traduisibles depuis la base Maximo
+    (onglet « 🗄️ Requêtes SQL » du classeur généré). Modifiez-les selon votre environnement
+    (schéma, filtres par application, LOCALENAME...) ou collez vos propres requêtes —
+    le classeur généré reprendra vos versions.</div>`;
+  sqlBlocks().forEach(b=>{
+    const modified=tmpSql[b.id].trim()!==defaultSqlOf(b.id).trim();
+    const lines=Math.min(16,Math.max(5,tmpSql[b.id].split('\n').length+1));
+    html+=`<div class="sql-block">
+      <div class="sql-bhead">
+        <span class="sql-bname">${b.icon} ${b.id}</span>
+        <span class="sql-blabel">${esc(b.label)}</span>
+        ${modified?'<span class="sbadge custom">✏️ modifiée</span>':'<span class="sbadge none">défaut</span>'}
+        <span style="flex:1"></span>
+        <button class="btn" style="font-size:10.5px;padding:3px 9px;" onclick="copySql('${b.id}')">⧉ Copier</button>
+        <button class="btn ghost" style="font-size:10.5px;padding:3px 9px;" onclick="resetOneSql('${b.id}')">↺ Défaut</button>
+      </div>
+      <textarea class="sql-ta" data-id="${b.id}" rows="${lines}" spellcheck="false"
+        oninput="tmpSql[this.dataset.id]=this.value" onchange="renderSqlBadges()">${esc(tmpSql[b.id])}</textarea>
+    </div>`;
+  });
+  document.getElementById('sql-body').innerHTML=html;
+}
+function renderSqlBadges(){renderSql();}
+function copySql(id){
+  const txt=tmpSql[id]!==undefined?tmpSql[id]:sqlOf(id);
+  if(navigator.clipboard)navigator.clipboard.writeText(txt).then(()=>toast('Requête '+id+' copiée','success'));
+  else toast('Copie non disponible dans ce navigateur','warning');
+}
+function resetOneSql(id){tmpSql[id]=defaultSqlOf(id);renderSql();}
+function resetAllSql(){sqlBlocks().forEach(b=>tmpSql[b.id]=defaultSqlOf(b.id));renderSql();}
+function saveSql(){
+  let n=0;
+  sqlBlocks().forEach(b=>{
+    const v=(tmpSql[b.id]||'').trim();
+    if(v&&v!==defaultSqlOf(b.id).trim()){state.customSql[b.id]=tmpSql[b.id];n++;}
+    else delete state.customSql[b.id];
+  });
+  try{localStorage.setItem('maximots_sql',JSON.stringify(state.customSql));}catch(e){}
+  closeSql();
+  toast(n?n+' requête(s) personnalisée(s) enregistrée(s)':'Requêtes par défaut restaurées','success');
+}
+function loadCustomSql(){
+  try{const s=localStorage.getItem('maximots_sql');if(s)state.customSql=JSON.parse(s)||{};}catch(e){}
+}
+
+/* ================== SETTINGS MODAL ================== */
+let tmpSettings={};
+function openSettings(){
+  tmpSettings={dataSource:state.dataSource,apiUrl:state.apiUrl,sqlDsn:state.sqlDsn};
+  renderSettings();
+  document.getElementById('settings-modal').classList.add('open');
+}
+function renderSettings(){
+  const b=document.getElementById('settings-body');
+  const opt=(id,t,d,extra)=>`<div class="src-opt${tmpSettings.dataSource===id?' active':''}" onclick="pickSource('${id}')">
+    <div class="radio"></div><div style="flex:1;"><div class="t">${t}</div><div class="d">${d}</div>${tmpSettings.dataSource===id?extra||'':''}</div></div>`;
+  b.innerHTML=
+    opt('demo','Mode démo','Échantillon embarqué des 6 tables — aucun accès Maximo requis.')+
+    opt('api','API REST / OSLC','Source officielle MAS 9 — cloud et on-premise, authentification gérée.',
+      `<input type="text" id="api-url" placeholder="https://masinst.suite.maximo.com/maximo/api" value="${esc(tmpSettings.apiUrl)}" onclick="event.stopPropagation()" oninput="tmpSettings.apiUrl=this.value">`)+
+    opt('sql','SQL direct','Exécutez les requêtes de l\'onglet « Requêtes SQL » et collez les résultats.',
+      `<input type="text" id="sql-dsn" placeholder="jdbc:db2://host:50005/maxdb" value="${esc(tmpSettings.sqlDsn)}" onclick="event.stopPropagation()" oninput="tmpSettings.sqlDsn=this.value">`);
+}
+function pickSource(id){tmpSettings.dataSource=id;renderSettings();}
+function closeSettings(){document.getElementById('settings-modal').classList.remove('open');}
+function saveSettings(){
+  state.dataSource=tmpSettings.dataSource;state.apiUrl=tmpSettings.apiUrl;state.sqlDsn=tmpSettings.sqlDsn;
+  document.getElementById('src-label').textContent={demo:'Démo',api:'API REST',sql:'SQL'}[state.dataSource];
+  closeSettings();
+  toast('Source de données enregistrée','success');
+}
+document.getElementById('settings-modal').addEventListener('click',e=>{if(e.target.id==='settings-modal')closeSettings();});
+document.getElementById('review-modal').addEventListener('click',e=>{if(e.target.id==='review-modal')closeReview();});
+
+/* ================== EXCEL — FORMAT SUIVI CLIENT ================== */
+/* Couleurs exactes du fichier client */
+const CX={
+  hdrKey:'FF1A237E', hdrModule:'FF1F3864', hdrSrc:'FF1565C0', hdrIbm:'FF4A148C',
+  hdrChoix:'FFE65100', hdrFin:'FF2E7D32', hdrStatut:'FF5D4037', hdrGray:'FF546E7A',
+  legend:'FF2E75B6', hint:'FFFAFAFA', hintInk:'FF757575',
+  rowBase:'FFF0F4F8', rowSrc:'FFEBF3FB', rowIbm:'FFEDE7F6', rowChoix:'FFFFF9C4',
+  rowFin:'FFE8F5E9', rowStatut:'FFFFF3E0', rowPrio:'FFF5F5F5',
+  sqlBg:'FFF1F8E9', warn:'FFFFCDD2',
+};
+const thin={style:'thin',color:{argb:'FFB0BEC5'}};
+const BORD={top:thin,bottom:thin,left:thin,right:thin};
+
+function choixOf(it,l){
+  const c=effChoice(it,l), decided=isDecided(it,l);
+  if(c==='ibm')return '✅ Conserver traduction IBM';
+  if(c==='manual'||c==='google')return '✏️ Modifier';
+  if(c==='skip')return '⬜ Non obligatoire';
+  return decided?'🔄 En cours':'';
+}
+function statutOf(it,l){
+  const c=effChoice(it,l), decided=isDecided(it,l);
+  if(!c)return 'À traiter';
+  if(c==='skip')return '🚫 Non applicable';
+  if(c==='google')return '⚠️ À revoir';
+  if(!decided)return 'À traiter';
+  if(cellWarnings(it,l).length)return '⚠️ À revoir';
+  return '✅ Validé';
+}
+function commentOf(it,l){
+  const c=effChoice(it,l);
+  const parts=[];
+  if(c==='google')parts.push('Traduction Google ('+(isDecided(it,l)?'validée par arbitrage':'proposition')+') — à relire');
+  if(c==='manual')parts.push('Saisie manuelle MaxiMots');
+  if(c==='ibm'&&!isDecided(it,l))parts.push('Proposition par défaut : IBM');
+  cellWarnings(it,l).forEach(w=>parts.push('⚠ '+w));
+  return parts.join(' · ');
+}
+function finaleOf(it,l){
+  const c=effChoice(it,l);
+  if(c==='skip'||!c)return '';
+  return effText(it,l);
+}
+
+function setDV(ws,colLetter,from,to,list){
+  for(let r=from;r<=to;r++){
+    ws.getCell(colLetter+r).dataValidation={type:'list',allowBlank:true,formulae:['"'+list+'"']};
+  }
+}
+function colLetter(n){let s='';while(n>0){const m=(n-1)%26;s=String.fromCharCode(65+m)+s;n=(n-1)/26|0;}return s;}
+
+function buildTableSheet(wb,tb,items,lang,S){
+  const ws=wb.addWorksheet(tb.icon+' '+tb.id,{views:[{state:'frozen',ySplit:5}]});
+  /* Définition des colonnes : module + clés + (src,ibm,choix,finale)×texts + extras + statut/prio/comm */
+  const cols=[{h:'MODULE / APPLICATION',hint:'Module / Application Maximo',fill:CX.hdrModule,row:CX.rowBase,w:24}];
+  tb.keyCols.forEach(k=>cols.push({h:k,hint:'Clé technique (ne pas modifier)',fill:CX.hdrKey,row:CX.rowBase,w:k==='LKEY'?30:18,key:k}));
+  tb.texts.forEach(tx=>{
+    const multi=tb.texts.length>1;
+    const p=multi?tx.f+' ':'';
+    const suffix=multi?' — '+tx.f:'';
+    cols.push({h:multi?tx.f+' SOURCE (EN)':tx.srcLabel,hint:'Extrait de la DB — ne pas modifier',fill:CX.hdrSrc,row:CX.rowSrc,w:42,src:tx.f});
+    cols.push({h:p+(multi?'IBM / MAXIMO '+lang:'TRADUCTION IBM / MAXIMO '+lang),hint:'Valeur affichée par Maximo en '+lang+' par défaut',fill:CX.hdrIbm,row:CX.rowIbm,w:34,ibm:tx.f});
+    cols.push({h:'CHOIX CLIENT'+suffix,hint:'Décision du client',fill:CX.hdrChoix,row:CX.rowChoix,w:26,choix:tx.f});
+    cols.push({h:multi?tx.f+' FINALE '+lang:'TRADUCTION FINALE '+lang,hint:'Valeur importée dans Maximo via MxLoader',fill:CX.hdrFin,row:CX.rowFin,w:42,fin:tx.f});
+  });
+  tb.extraCols.forEach(k=>cols.push({h:k,hint:k==='LOCALENAME'?'Clé technique (ne pas modifier)':'Module / Application Maximo',fill:k==='LOCALENAME'?CX.hdrKey:CX.hdrModule,row:CX.rowBase,w:12,extra:k}));
+  cols.push({h:'STATUT',hint:'Avancement',fill:CX.hdrStatut,row:CX.rowStatut,w:16,statut:true});
+  cols.push({h:'PRIORITÉ',hint:'Priorité',fill:CX.hdrGray,row:CX.rowPrio,w:13,prio:true});
+  cols.push({h:'COMMENTAIRES',hint:'Contexte, remarques',fill:CX.hdrGray,row:CX.rowBase,w:36,comm:true});
+  ws.columns=cols.map(c=>({width:c.w}));
+  const n=cols.length;
+
+  /* Lignes 1-3 : titre, légende, consigne */
+  ws.mergeCells(1,1,1,n);
+  const t1=ws.getCell(1,1);
+  t1.value='Maximo MAS9 — Traductions  '+tb.id+'  ·  EN → '+lang;
+  ws.getRow(1).height=39.75;
+  ws.mergeCells(2,1,2,n);
+  const t2=ws.getCell(2,1);
+  t2.value='🔵 Source EN (lecture seule)  ·  🟣 IBM/Maximo '+lang+' (lecture seule)  ·  🟡 Choix client  ·  🟢 Traduction finale (import MxLoader)  ·  🟠 Statut';
+  ws.getRow(2).height=19.5;
+  ws.mergeCells(3,1,3,n);
+  const t3=ws.getCell(3,1);
+  t3.value='TABLE DB : '+tb.id+'  ·  Renseigner : CHOIX CLIENT + TRADUCTION FINALE  ·  Généré par MaxiMots ('+new Date().toLocaleDateString('fr-FR')+')';
+  ws.getRow(3).height=18;
+  if(S){
+    t1.fill={type:'pattern',pattern:'solid',fgColor:{argb:tb.titleColor}};
+    t1.font={bold:true,size:14,color:{argb:'FFFFFFFF'},name:'Calibri'};
+    t1.alignment={vertical:'middle'};
+    t2.fill={type:'pattern',pattern:'solid',fgColor:{argb:CX.legend}};
+    t2.font={size:9,color:{argb:'FFFFFFFF'},name:'Calibri'};
+    t2.alignment={vertical:'middle'};
+    t3.fill={type:'pattern',pattern:'solid',fgColor:{argb:CX.hdrKey}};
+    t3.font={size:8,color:{argb:'FFFFFFFF'},name:'Calibri'};
+    t3.alignment={vertical:'middle'};
+  }
+  /* Ligne 4 : en-têtes · ligne 5 : hints */
+  ws.getRow(4).height=36;
+  ws.getRow(5).height=12.75;
+  cols.forEach((c,i)=>{
+    const hc=ws.getCell(4,i+1);
+    hc.value=c.h;
+    const xc=ws.getCell(5,i+1);
+    xc.value=c.hint;
+    if(S){
+      hc.fill={type:'pattern',pattern:'solid',fgColor:{argb:c.fill}};
+      hc.font={bold:true,size:9,color:{argb:'FFFFFFFF'},name:'Calibri'};
+      hc.alignment={vertical:'middle',horizontal:'center',wrapText:true};
+      hc.border=BORD;
+      xc.fill={type:'pattern',pattern:'solid',fgColor:{argb:CX.hint}};
+      xc.font={size:7,color:{argb:CX.hintInk},name:'Calibri'};
+      xc.alignment={vertical:'middle',wrapText:true};
+    }
+  });
+  /* Données (ligne 6+) : une ligne par row de la table */
+  const rowIdxs=[...new Set(items.map(it=>it.rowIdx))];
+  let r=6;
+  rowIdxs.forEach(ri=>{
+    const row=tb.rows[ri];
+    const rowItems={};
+    items.filter(it=>it.rowIdx===ri).forEach(it=>rowItems[it.field]=it);
+    const comments=[];const statuts=[];
+    cols.forEach((c,i)=>{
+      const cell=ws.getCell(r,i+1);
+      let fill=c.row;
+      if(c.key)cell.value=row.keys[c.key]||'';
+      else if(c.src){const it=rowItems[c.src];cell.value=it?it.en:(row.t[c.src]?row.t[c.src].en:'');}
+      else if(c.ibm){const it=rowItems[c.ibm];cell.value=it?(it.ibm[lang]||''):(row.t[c.ibm]&&row.t[c.ibm].ibm[lang]||'');}
+      else if(c.choix){const it=rowItems[c.choix];cell.value=it?choixOf(it,lang):'';}
+      else if(c.fin){const it=rowItems[c.fin];cell.value=it?finaleOf(it,lang):'';
+        if(it&&cellWarnings(it,lang).length)fill=CX.warn;}
+      else if(c.extra==='LOCALENAME')cell.value=lang;
+      else if(c.extra)cell.value='';
+      else if(c.statut){const sts=Object.values(rowItems).map(it=>statutOf(it,lang));
+        cell.value=sts.includes('À traiter')?'À traiter':sts.includes('⚠️ À revoir')?'⚠️ À revoir':sts[0]||'À traiter';}
+      else if(c.prio)cell.value='🟡 Moyenne';
+      else if(c.comm)cell.value=Object.values(rowItems).map(it=>commentOf(it,lang)).filter(Boolean).join(' | ');
+      else cell.value=row.module;
+      if(S){
+        cell.fill={type:'pattern',pattern:'solid',fgColor:{argb:fill}};
+        cell.font={size:9,name:'Calibri'};
+        cell.alignment={vertical:'top',wrapText:true};
+        cell.border=BORD;
+      }
+    });
+    r++;
+  });
+  /* Lignes vides préformatées pour saisies futures (comme le modèle client) */
+  for(let k=0;k<25;k++){
+    cols.forEach((c,i)=>{
+      const cell=ws.getCell(r,i+1);
+      if(c.extra==='LOCALENAME')cell.value=lang;
+      if(S){cell.fill={type:'pattern',pattern:'solid',fgColor:{argb:c.row}};cell.border=BORD;cell.font={size:9,name:'Calibri'};}
+    });
+    r++;
+  }
+  /* Validations de données (jusqu'à r+50 pour saisies futures) */
+  const last=r+50;
+  cols.forEach((c,i)=>{
+    const L=colLetter(i+1);
+    if(c.choix)setDV(ws,L,6,last,DV_CHOIX);
+    if(c.statut)setDV(ws,L,6,last,DV_STATUT);
+    if(c.prio)setDV(ws,L,6,last,DV_PRIO);
+  });
+  ws.autoFilter={from:{row:4,column:1},to:{row:4,column:n}};
+  return rowIdxs.length;
+}
+
+function buildSqlSheet(wb,tabs,S){
+  const ws=wb.addWorksheet('🗄️ Requêtes SQL');
+  ws.columns=[{width:3},{width:34},{width:105}];
+  const W={argb:'FFFFFFFF'};
+  const CC={horizontal:'center',vertical:'middle',wrapText:true};
+  const LT={horizontal:'left',vertical:'top',wrapText:true};
+  const solid=a=>({type:'pattern',pattern:'solid',fgColor:{argb:a}});
+  const F=(c,o)=>{if(S)Object.assign(c,o);};
+  ws.mergeCells('A1:C1');
+  let c=ws.getCell('A1');
+  c.value='REQUÊTES SQL — Extraction des données traduisibles depuis la base Maximo';
+  F(c,{fill:solid('FF1B5E20'),font:{bold:true,size:14,color:W,name:'Calibri'},alignment:CC});
+  ws.getRow(1).height=39.75;
+  ws.mergeCells('A2:C2');
+  c=ws.getCell('A2');
+  c.value='Exécuter dans DBeaver / SQL Developer / psql  ·  Coller les résultats dans les onglets correspondants  ·  Lecture seule — aucune modification de la DB';
+  F(c,{fill:solid('FF2E75B6'),font:{italic:true,size:9,color:W,name:'Calibri'},alignment:CC});
+  ws.getRow(2).height=19.5;
+  ws.mergeCells('B3:C3');
+  c=ws.getCell('B3');
+  c.value="⚠️  Requêtes SELECT uniquement — aucune écriture en base.  Tester d'abord sur recette.";
+  F(c,{fill:solid('FFB71C1C'),font:{bold:true,size:9,color:W,name:'Calibri'},alignment:CC});
+  ws.getRow(3).height=19.5;
+  let r=4;
+  const blocks=tabs.map(tb=>({name:tb.id+'\n'+tb.label,sql:sqlOf(tb.id),
+      note:'▶ '+tb.icon+' Onglet '+tb.id+(state.customSql[tb.id]?'\n✏️ Requête personnalisée par le client':'')+'\n'+tb.sqlNote+'\nVolume typique : '+tb.vol}))
+    .concat(SQL_EXTRA.map(x=>({name:x.name,sql:sqlOf(x.id),
+      note:x.note+(state.customSql[x.id]?'\n✏️ Requête personnalisée par le client':'')})));
+  blocks.forEach(b=>{
+    const lines=b.sql.split('\n').length;
+    const hh=Math.max(55,Math.round(lines*5.7));
+    ws.mergeCells(r,3,r+1,3);
+    const name=ws.getCell(r,2);name.value=b.name;
+    F(name,{fill:solid('FF1B5E20'),font:{bold:true,size:9,color:W,name:'Calibri'},alignment:CC,border:BORD});
+    const sql=ws.getCell(r,3);sql.value=b.sql;
+    F(sql,{fill:solid('FFF1F8E9'),font:{size:8,name:'Consolas',color:{argb:'FF1B5E20'}},alignment:LT,border:BORD});
+    const note=ws.getCell(r+1,2);note.value=b.note;
+    F(note,{fill:solid('FFF1F8E9'),font:{italic:true,size:8,color:{argb:'FF1B5E20'},name:'Calibri'},alignment:LT,border:BORD});
+    ws.getRow(r).height=hh;ws.getRow(r+1).height=hh;
+    r+=3;
+  });
+}
+
+function buildMxloaderSheet(wb,tabsData,lang,S){
+  const ws=wb.addWorksheet('📤 Format MxLoader');
+  ws.columns=[{width:14},{width:26},{width:24},{width:24},{width:46},{width:46},{width:10}];
+  let r=1;
+  tabsData.forEach(({tb,items})=>{
+    const finCols=tb.texts.map(tx=>tx.f);
+    const title=ws.getCell(r,1);
+    title.value='FORMAT MXLOADER — '+tb.id+' ('+lang+')  ·  object='+tb.id+'  ·  action=AddChange';
+    ws.mergeCells(r,1,r,7);
+    if(S){title.font={bold:true,size:11,color:{argb:'FFFFFFFF'},name:'Calibri'};
+      title.fill={type:'pattern',pattern:'solid',fgColor:{argb:tb.titleColor}};}
+    ws.getRow(r).height=22;r++;
+    const hdr=['ACTION'].concat(tb.keyCols,finCols.map(f=>f+' ('+lang+')'),['LANGCODE']);
+    hdr.forEach((hd,i)=>{const c=ws.getCell(r,i+1);c.value=hd;
+      if(S){c.font={bold:true,size:9,color:{argb:'FFFFFFFF'},name:'Calibri'};
+        c.fill={type:'pattern',pattern:'solid',fgColor:{argb:CX.hdrKey}};c.border=BORD;}});
+    r++;
+    const keyN=tb.keyCols.length;
+    let wrote=0;
+    [...new Set(items.map(it=>it.rowIdx))].forEach(ri=>{
+      const row=tb.rows[ri];
+      const rowItems={};items.filter(it=>it.rowIdx===ri).forEach(it=>rowItems[it.field]=it);
+      const fins=finCols.map(f=>rowItems[f]?finaleOf(rowItems[f],lang):'');
+      if(fins.every(v=>!v))return;
+      const vals=['AddChange'].concat(tb.keyCols.map(k=>row.keys[k]||''),fins,[lang]);
+      vals.forEach((v,i)=>{const c=ws.getCell(r,i+1);c.value=v;
+        if(S){c.font={size:9,name:'Calibri'};c.border=BORD;
+          if(i>keyN&&i<=keyN+finCols.length)c.fill={type:'pattern',pattern:'solid',fgColor:{argb:CX.rowFin}};}});
+      r++;wrote++;
+    });
+    if(!wrote){const c=ws.getCell(r,1);c.value='(aucune traduction finale pour le moment)';
+      if(S)c.font={italic:true,size:9,color:{argb:'FF757575'},name:'Calibri'};r++;}
+    r++;
+  });
+}
+
+function buildGuideSheet(wb,S){
+  const ws=wb.addWorksheet('📋 Guide');
+  ws.columns=[{width:3},{width:26},{width:100}];
+  const W={argb:'FFFFFFFF'};
+  const CC={horizontal:'center',vertical:'middle',wrapText:true};
+  const LT={horizontal:'left',vertical:'top',wrapText:true};
+  const solid=a=>({type:'pattern',pattern:'solid',fgColor:{argb:a}});
+  const F=(c,o)=>{if(S)Object.assign(c,o);};
+  ws.mergeCells('A1:C1');
+  let c=ws.getCell('A1');
+  c.value='MAXIMO MAS9 — Suivi Traductions Multilingues  EN → FR / DE / ES / …';
+  F(c,{fill:solid('FF1F3864'),font:{bold:true,size:14,color:W,name:'Calibri'},alignment:CC});
+  ws.getRow(1).height=39.75;
+  ws.mergeCells('A2:C2');
+  c=ws.getCell('A2');
+  c.value='Fichier de préparation et suivi client  |  IBM Maximo Application Suite 9 – Manage 9.1.15  |  Généré par MaxiMots Translation Studio (maxTeam)';
+  F(c,{fill:solid('FF2E75B6'),font:{italic:true,size:9,color:W,name:'Calibri'},alignment:CC});
+  ws.getRow(2).height=19.5;
+  let r=4;
+  const sec=(t,txt)=>{
+    const hc=ws.getCell(r,2);hc.value=t;
+    F(hc,{fill:solid('FF2E75B6'),font:{bold:true,size:9,color:W,name:'Calibri'},alignment:CC,border:BORD});
+    const cc=ws.getCell(r,3);cc.value=txt;
+    F(cc,{font:{size:9,color:{argb:'FF212121'},name:'Calibri'},alignment:LT,border:BORD});
+    ws.getRow(r).height=Math.max(27.75,txt.split('\n').length*13.5);
+    r++;
+  };
+  sec('OBJECTIF',"Ce fichier centralise l'extraction, la proposition IBM, le choix client et la traduction finale pour activer les langues cibles dans Maximo MAS9.\nUn onglet par table Maximo. Chaque ligne = un élément traduisible.\nL'arbitrage (IBM / Google / Manuel / Non obligatoire) a été préparé dans MaxiMots — les choix sont pré-remplis.");
+  sec('ÉTAPE 1 — Extraction SQL',"Exécuter les requêtes de l'onglet '🗄️ Requêtes SQL' dans DBeaver / SQL Developer / psql.\nColler les résultats dans la colonne 'VALEUR SOURCE (EN)' de chaque onglet table (à partir de la ligne de données).");
+  sec('ÉTAPE 2 — Traduction IBM',"Renseigner la colonne 'TRADUCTION IBM / MAXIMO xx' avec la valeur affichée par Maximo lors du basculement de langue (valeur par défaut IBM).\nSi Maximo ne propose rien : laisser vide.");
+  sec('ÉTAPE 3 — Choix client',"Le client renseigne la colonne 'CHOIX CLIENT' via la liste déroulante :\n  ✅ Conserver traduction IBM   → accepte la valeur IBM telle quelle\n  ✏️ Modifier                  → veut une traduction différente\n  ⬜ Non obligatoire           → élément non traduit (code, acronyme…)\n  🔄 En cours                  → traduction en réflexion");
+  sec('ÉTAPE 4 — Traduction finale',"Renseigner 'TRADUCTION FINALE xx' :\n  • Si choix = 'Conserver IBM'  → recopier la valeur IBM\n  • Si choix = 'Modifier'       → saisir la nouvelle traduction\n  • Si choix = 'Non obligatoire'→ laisser vide\nC'est cette colonne qui sera importée via MxLoader.\n⚠ Contraintes contrôlées par MaxiMots : longueur max du champ DB, variables {0} {1} des messages, balises HTML des descriptions longues.");
+  sec('ÉTAPE 5 — Import MxLoader',"Utiliser l'onglet '📤 Format MxLoader' : lignes prêtes (action=AddChange, object=NOM_TABLE, LANGCODE).\nColler dans votre classeur MxLoader puis charger.\nAvant import : exécuter la requête 'CONTRÔLE — FR existants' pour éviter les doublons.");
+  sec('LÉGENDE COULEURS',"🔵 Fond bleu pâle       → VALEUR SOURCE EN   (lecture seule)\n🟣 Fond lavande         → TRADUCTION IBM     (lecture seule)\n🟡 Fond jaune           → CHOIX CLIENT       (décision client)\n🟢 Fond vert pâle       → TRADUCTION FINALE  (valeur importée MxLoader)\n🟠 Fond orange pâle     → STATUT\n🔴 Fond rouge pâle      → contrainte DB non respectée (longueur, variable, HTML)");
+  sec('TABLES COUVERTES',"SYNONYMDOMAIN   → valeurs de domaines (listes déroulantes)\nMAXLABELS       → labels des champs, onglets, boutons et applications\nMAXMESSAGES     → messages d'erreur, d'avertissement et d'information\nMAXATTRIBUTE    → titres et descriptions des attributs d'objets\nAPPLICATION     → noms des applications dans les menus\nLONGDESCRIPTION → descriptions longues (aide, notices)");
+}
+
+function buildSuiviSheet(wb,tabsData,lang,S){
+  const ws=wb.addWorksheet('📊 Suivi global');
+  ws.columns=[{width:3},{width:24},{width:14},{width:16},{width:13},{width:17},{width:14},{width:14},{width:12},{width:30}];
+  const W={argb:'FFFFFFFF'};
+  const CC={horizontal:'center',vertical:'middle',wrapText:true};
+  const solid=a=>({type:'pattern',pattern:'solid',fgColor:{argb:a}});
+  const F=(c,o)=>{if(S)Object.assign(c,o);};
+  ws.mergeCells('A1:J1');
+  let c=ws.getCell('A1');
+  c.value='SUIVI GLOBAL — Avancement des traductions ('+lang+')';
+  F(c,{fill:solid('FF1F3864'),font:{bold:true,size:14,color:W,name:'Calibri'},alignment:CC});
+  ws.getRow(1).height=39.75;
+  ws.mergeCells('A2:J2');
+  c=ws.getCell('A2');
+  c.value='Calculé automatiquement par MaxiMots le '+new Date().toLocaleString('fr-FR');
+  F(c,{fill:solid('FF2E75B6'),font:{italic:true,size:9,color:W,name:'Calibri'},alignment:CC});
+  ws.getRow(2).height=19.5;
+  const hdr=['TABLE MAXIMO','NB TOTAL (SQL)','IBM '+lang+' RENSEIGNÉ','CHOIX SAISI','TRADUCTION FINALE','% AVANCEMENT','STATUT IMPORT','DATE MAJ','COMMENTAIRES'];
+  hdr.forEach((t,i)=>{
+    const hc=ws.getCell(3,i+2);hc.value=t;
+    F(hc,{fill:solid('FF2E75B6'),font:{bold:true,size:9,color:W,name:'Calibri'},alignment:CC,border:BORD});
+  });
+  ws.getRow(3).height=27.75;
+  const today=new Date().toLocaleDateString('fr-FR');
+  let r=4;
+  tabsData.forEach((td,ti)=>{
+    const its=td.items;
+    const nIbm=its.filter(it=>it.ibm[lang]).length;
+    const nChoix=its.filter(it=>isDecided(it,lang)).length;
+    const nFin=its.filter(it=>finaleOf(it,lang)).length;
+    const rowFill=ti%2===0?'FFF5F5F5':'FFFFFFFF';
+    const vals=[td.tb.icon+' '+td.tb.id,its.length,nIbm,nChoix,nFin,null,'En attente',today,''];
+    vals.forEach((v,i)=>{
+      const cl=ws.getCell(r,i+2);
+      if(i===5){cl.value={formula:'IFERROR(F'+r+'/C'+r+',"")'};if(S)cl.numFmt='0%';}
+      else cl.value=v;
+      F(cl,{fill:solid(rowFill),font:i===0?{bold:true,size:9,color:{argb:td.tb.titleColor},name:'Calibri'}:{size:9,name:'Calibri'},alignment:i===0?{horizontal:'left',vertical:'middle',wrapText:true}:CC,border:BORD});
+    });
+    ws.getCell('H'+r).dataValidation={type:'list',allowBlank:true,formulae:['"'+DV_IMPORT+'"']};
+    ws.getRow(r).height=21.75;
+    r++;
+  });
+}
+
+async function generateExcel(){
+  if(!state.selectedLangs.length){toast('Sélectionnez au moins une langue cible','warning');return;}
+  try{
+    const S=state.styled;
+    /* Classeur complet : les 6 tables, avec les éléments cochés (par défaut : tous) */
+    const tabsData=TABLES.map(tb=>{
+      const all=itemsOf(tb);
+      const items=initTables.has(tb.id)?all.filter(it=>state.checked.has(it.id)):all;
+      return {tb,items};
+    });
+    for(const lang of state.selectedLangs){
+      toast('Génération du classeur de suivi '+lang+'...','info');
+      const wb=new ExcelJS.Workbook();
+      wb.creator='MaxiMots by maxTeam';
+      wb.created=new Date();
+      if(state.includeSql)buildSqlSheet(wb,TABLES,S);
+      tabsData.forEach(({tb,items})=>buildTableSheet(wb,tb,items,lang,S));
+      if(state.includeMxloader)buildMxloaderSheet(wb,tabsData,lang,S);
+      buildGuideSheet(wb,S);
+      buildSuiviSheet(wb,tabsData,lang,S);
+      const buffer=await wb.xlsx.writeBuffer();
+      const blob=new Blob([buffer],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
+      const url=URL.createObjectURL(blob);
+      const a=document.createElement('a');
+      a.href=url;
+      a.download=`MaxiMots_Suivi_Traductions_${lang}_${new Date().toISOString().slice(0,10)}.xlsx`;
+      document.body.appendChild(a);a.click();document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+    toast('Classeur de suivi généré — 6 tables, format client !','success');
+  }catch(err){
+    console.error(err);
+    toast('Erreur de génération : '+err.message,'error');
+  }
+}
+
+/* ================== INIT ================== */
+loadCustomSql();
+renderAll();
+</script>
+</body>
+</html>

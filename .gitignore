@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Données de session (générées à l'exécution)
+backend/uploads/
+backend/exports/
+
+# Divers
+_trash/
+.DS_Store
+Thumbs.db
+*.log
